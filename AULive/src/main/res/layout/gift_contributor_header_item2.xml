@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listselector"
+    android:paddingBottom="10.0dip"
+    android:paddingTop="5.0dip">
+
+    <TextView
+        android:id="@id/rank_num"
+        style="@style/gift_contributor_rank"
+        android:text="@string/room_contributor_rank" />
+
+    <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+        android:id="@id/user_portrait"
+        android:layout_width="43.0dip"
+        android:layout_height="43.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/default_head" />
+
+    <ImageView
+        android:id="@id/img_rank_bg"
+        style="@style/gift_contributor_rank_bg"
+        android:layout_width="66.0dip"
+        android:layout_height="63.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/me_yp_no_2" />
+
+    <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+        android:id="@id/img_user_type"
+        android:layout_width="13.0dip"
+        android:layout_height="13.0dip"
+        android:layout_alignBottom="@id/user_portrait"
+        android:layout_alignRight="@id/user_portrait"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginRight="-2.0dip" />
+
+    <LinearLayout
+        android:id="@id/name_gender"
+        style="@style/gift_contributor_name_gender"
+        android:layout_below="@id/img_rank_bg">
+
+        <TextView
+            android:id="@id/txt_username"
+            style="@style/cell_useritem_username"
+            android:text="@string/userhome_nickname_default" />
+
+        <ImageView
+            android:id="@id/img_gender"
+            style="@style/cell_useritem_gender_img"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/grade_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="1.5dp"
+            android:background="@drawable/icon_medal_32_1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/grade_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="130"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/txt_coin_count"
+        style="@style/gift_contributor_coin_count"
+        android:layout_below="@id/name_gender"
+        android:text="@string/room_contributor_contribution" />
+</RelativeLayout>

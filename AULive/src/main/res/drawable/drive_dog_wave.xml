@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dog_wave_anim"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/drive_dog_wave00"
+        android:duration="100"/>
+
+    <item
+        android:drawable="@drawable/drive_dog_wave01"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/drive_dog_wave02"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/drive_dog_wave03"
+        android:duration="100"/>
+</animation-list>

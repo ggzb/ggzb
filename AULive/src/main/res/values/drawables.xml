@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="draw_temp" type="drawable">#fff4f4f4</item>
+
+    <drawable name="list_backgroud_normal">@color/white</drawable>
+    <drawable name="transparent">@color/transparent</drawable>
+
+    <item name="trans_white" type="drawable">#aaffffff</item>
+    <!-- face menu bg -->
+    <item name="tap_indicator_bg" type="drawable">#ff3d3d3d</item>
+
+    <drawable name="view_unpressed">#00000000</drawable>
+    <drawable name="view_pressed">#22000000</drawable>
+    </resources>

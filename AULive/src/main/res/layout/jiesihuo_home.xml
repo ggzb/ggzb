@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <FrameLayout
+          android:id="@+id/mActivitySquareHallFrame"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/bottomLayout"
+          >
+      </FrameLayout>
+
+      <FrameLayout
+          android:id="@+id/mActivityMsgFrame"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/bottomLayout"
+          android:visibility="gone"
+          >
+      </FrameLayout>
+
+      <FrameLayout
+          android:id="@+id/mActivityFindFrame"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/bottomLayout"
+          android:visibility="gone"
+          >
+      </FrameLayout>
+
+      <FrameLayout
+          android:id="@+id/mActivityMyInfoFrame"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/bottomLayout"
+          android:visibility="gone"
+          >
+      </FrameLayout>
+
+      <FrameLayout
+          android:id="@+id/mActivityRankFrame"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/bottomLayout"
+          android:visibility="gone"
+          >
+      </FrameLayout>
+
+      <FrameLayout
+          android:id="@+id/mActivityPayFrame"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/bottomLayout"
+          android:visibility="gone"
+          >
+      </FrameLayout>
+
+      <LinearLayout
+          android:id="@+id/bottomLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          >
+
+        <include layout="@layout/jiesihuo_bottom"/>
+      </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+      <Button
+          android:id="@+id/tab_add_bt"
+          android:layout_width="66dp"
+          android:layout_height="66dp"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/home_tab_center_add"
+          />
+
+      <TextView
+          android:id="@+id/home_tab_center_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/tab_add_bt"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="3dp"
+          android:gravity="center"
+          android:text="发需求"
+          android:textColor="@color/maintab_text_color"
+          android:textSize="15sp"
+          android:visibility="gone"
+          />
+    </RelativeLayout>
+  </FrameLayout>
+</RelativeLayout>

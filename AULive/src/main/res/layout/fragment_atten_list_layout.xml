@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/jiesihuo_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/msgInfoTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="网络异常"
+                android:textColor="#ff000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <!-- <com.qixi.piaoke.pull.widget.PullToRefreshView -->
+
+            <com.ilikezhibo.ggzb.pull.widget.PullToRefreshView
+                xmlns:stay="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pull_to_refresh_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/item_bg"
+                android:divider="@color/marging_line"
+                android:dividerHeight="0dp"
+                android:layoutAnimation="@anim/list_controller"
+                android:listSelector="@drawable/group_view_selector"
+                android:scrollbars="none"
+                stay:pullMode="scrollBottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fav_nocontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/iv_main_menu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/empty_list" />
+
+            <Button
+                android:id="@+id/iv_kuangkuang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="这里一片荒凉..."
+                android:textSize="20sp"
+                android:textColor="@color/graylight2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loadingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <include layout="@layout/jiesihuo_loading_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

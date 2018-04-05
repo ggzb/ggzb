@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/dot_more_gray"
+        android:gravity="center"
+        android:left="20dp"/>
+    <item
+        android:drawable="@drawable/dot_more_gray"
+        android:gravity="center"
+         />
+    <item
+        android:drawable="@drawable/dot_more_gray"
+        android:gravity="center"
+        android:right="20dp" />
+
+</layer-list>

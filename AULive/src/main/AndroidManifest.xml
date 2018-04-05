@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ilikezhibo.ggzb"
+          android:versionCode="4"
+          android:versionName="1.1">
+
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21"/>
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- 截取短信 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- KSYStreamer -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_SINTERNETWIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 硬件特性 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <!-- 视频播放 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+    <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- bugly -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:name=".DelegateApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <!-- android:name=".avsdk.activity.LoginActivity" -->
+        <activity
+            android:name="com.ilikezhibo.ggzb.home.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppStartLoadTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ilikezhibo.ggzb.home.AULiveHomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.login.LoginMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.login.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.register.RegisterNextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.cropimage.MyCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.login.GetPassWordByEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.login.GetPassWordByPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.login.ForgetPassWord"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.StepMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.ShiHuoStep1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.ShiHuoStep2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.ShiHuoStep3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.ShiHuoStep4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.ShiHuoStep5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.ShiHuoStep6Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.welcome.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.FaXiangMuStep1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.FaXiangMuStep2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.step.FaXiangMuStep3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.xiangmu.myproject.MyProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.xiangmu.myproject.HeProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.setting.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.mymoney.MyMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.bind.BindAlipayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.bind.BindWeixinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.mymoney.ChoosePayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.mymoney.TiXianActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.MyProFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.CertificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.myfriends.MyFriendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.AboatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.SuggestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.myjointedpro.MyJointProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.myjointedpro.HeJointProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.myfav.MyFavProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.xiangmu.FaXiangMuDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.xiangmu.FaXiangMuDetailPayMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.xiangmu.FaXiangMuModifyDelete"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.photos.photobrowser.PicBrowseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.news.detail.NewsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.xiangmuguanli.XiangMuGuanLiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.xiangmuguanli.CommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.mymoney.inoutrecord.InOutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.views.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.views.UserInfoWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.views.UpLoadFileWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+
+        <!-- 微信 ############ -->
+        <activity
+            android:name="com.ilikezhibo.ggzb.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!--<activity-->
+            <!--android:name="com.ilikezhibo.ggzb.wxapi.WXPayEntryActivity"-->
+            <!--android:exported="true"-->
+            <!--android:launchMode="singleTop"/>-->
+        <activity
+            android:name="com.ilikezhibo.ggzb.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wx49f9c4391a9c0620"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.ilikezhibo.ggzb.wxapi.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID:1104467800 -->
+                <data android:scheme="tencent1105172721"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 微博相关 -->
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 手机短信注册页面 -->
+        <activity
+            android:name="com.sina.weibo.sdk.register.mobile.MobileRegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 注册选择国家页面 -->
+        <activity
+            android:name="com.sina.weibo.sdk.register.mobile.SelectCountryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 友盟相关 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"/>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="${UMENG_CHANNEL_VALUE}"/> -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a096b07f43e48720f00012f"/>
+
+        <!-- &lt;!&ndash; 下面是百度推送的配置 &ndash;&gt; -->
+        <!-- &lt;!&ndash; push service rich media display &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!-- android:label="MediaViewActivity"/> -->
+        <!-- <activity -->
+        <!-- android:name="com.baidu.android.pushservice.richmedia.MediaListActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!-- android:label="MediaListActivity" -->
+        <!-- android:launchMode="singleTask"> -->
+        <!-- </activity> -->
+
+
+        <!-- &lt;!&ndash; push service client &ndash;&gt; -->
+        <!-- <receiver android:name="com.hrbhzkj.xinxiu.PushMessageReceiver"> -->
+        <!-- <intent-filter> -->
+
+
+        <!-- &lt;!&ndash; 接收push消息 &ndash;&gt; -->
+        <!-- <action android:name="com.baidu.android.pushservice.action.MESSAGE"/> -->
+        <!-- &lt;!&ndash; 接收bind,unbind,fetch,delete等反馈消息 &ndash;&gt; -->
+        <!-- <action android:name="com.baidu.android.pushservice.action.RECEIVE"/> -->
+        <!-- <action android:name="com.baidu.android.pushservice.action.notification.CLICK"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- &lt;!&ndash; push service &ndash;&gt; -->
+        <!-- <receiver -->
+        <!-- android:name="com.baidu.android.pushservice.PushServiceReceiver" -->
+        <!-- android:process=":bdservice_v1"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED"/> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+        <!-- <action android:name="com.baidu.android.pushservice.action.notification.SHOW"/> -->
+        <!-- <action android:name="com.baidu.android.pushservice.action.media.CLICK"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name="com.baidu.android.pushservice.RegistrationReceiver" -->
+        <!-- android:process=":bdservice_v1"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.baidu.android.pushservice.action.METHOD"/> -->
+        <!-- <action android:name="com.baidu.android.pushservice.action.BIND_SYNC"/> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_REMOVED"/> -->
+
+
+        <!-- <data android:scheme="package"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- &lt;!&ndash; 注意：在4.0 (包含)之后的版本需加上如下所示的intent-filter action &ndash;&gt; -->
+        <!-- <service -->
+        <!-- android:name="com.baidu.android.pushservice.PushService" -->
+        <!-- android:exported="true" -->
+        <!-- android:process=":bdservice_v1"> -->
+        <!-- </service> -->
+
+
+        <!-- &lt;!&ndash; push结束 &ndash;&gt; -->
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="9kohyKx0ib4Sxto1idDam5o8"/>
+
+        <!-- 定位与地图  bWrmPlr900DSf3i9c1Cm9rS0 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="u2pG3Fert2PvaFiirAtBQxRbUxGnkKGy"/>
+
+        <!-- 定位相关 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.ilikezhibo.ggzb.SMSBroadcastReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="com.hainantaohua.yinghua.FileProvider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@" /> -->
+        <!-- </provider> -->
+
+
+        <!-- 互动直播相关 -->
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.activity.StartActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.home.ProgramListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.search.SearchListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.activity.AvActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan">
+
+            <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW"/> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- <data -->
+            <!-- android:host="com.hrbhzkj.xinxiu" -->
+            <!-- android:pathPrefix="/conversationlist" -->
+            <!-- android:scheme="rong"/> -->
+            <!-- </intent-filter> -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW"/> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- <data -->
+            <!-- android:host="com.hrbhzkj.xinxiu" -->
+            <!-- android:pathPrefix="/conversation/" -->
+            <!-- android:scheme="rong"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.ilikezhibo.ggzb.wxapi.SinaShareReqActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.chat.blacklist.BlackListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.chat.PrivateChatListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.chat.PrivateChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="com.ilikezhibo.ggzb"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.activity.GameOverActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucent"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.MyUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.buydiamond.BuyDiamondActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.userinfo.toprank.TopRankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.userinfo.homepage.HomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.userinfo.AttenListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.userinfo.ManagerListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.userinfo.FansListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.userinfo.LivesListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.activity.ReleaseLiveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+
+        <!-- 信鸽相关 -->
+
+
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2">
+            <intent-filter android:priority="0x7fffffff">
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK"/>
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE"/>
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2"/>
+
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ilikezhibo.ggzb.PUSH_ACTION"/>
+            </intent-filter>
+        </service>
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100280322"/>
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A78K1WHL86BR"/>
+
+        <!-- 更新APK -->
+        <service
+            android:name="update.DownloadService"
+            android:exported="true"/>
+
+        <receiver
+            android:name="com.ilikezhibo.ggzb.avsdk.chat.RongCloudPushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="tinker.android.service.SampleResultService"
+            android:exported="false"/>
+
+        <!-- 视频聊天管理 -->
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.VideoChatMgmtActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.VideoChatCondActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar"/>
+        <activity
+            android:name="com.ilikezhibo.ggzb.userinfo.bind.BindPublicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar">
+        </activity>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.exchange.ExchangeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar">
+        </activity>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.exchange.ExchangeRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar">
+        </activity>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.exchange.ExchangeAlipayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar">
+        </activity>
+        <activity
+            android:name="com.ilikezhibo.ggzb.avsdk.exchange.ExchangeDiamondActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AULiveNoActionBar">
+        </activity>
+        <activity android:name="com.ilikezhibo.ggzb.avsdk.exchange.ExchangeBankActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AULiveNoActionBar">
+        </activity>
+    </application>
+
+</manifest>

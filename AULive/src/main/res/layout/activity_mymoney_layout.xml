@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <include
+        android:id="@+id/title_bar"
+        layout="@layout/jiesihuo_title" />
+     
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_below="@id/title_bar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/topLayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/msgInfoTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="网络异常"
+                android:textColor="#ff000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.ilikezhibo.ggzb.pull.widget.PullToRefreshView
+                xmlns:stay="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pull_to_refresh_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#efeeee"
+                android:divider="#efeeee"
+                android:dividerHeight="1dp"
+                android:layoutAnimation="@anim/list_controller"
+                android:listSelector="@drawable/view_selector"
+                android:scrollbars="none"
+                stay:pullMode="scrollBottom" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayout"
+        android:visibility="gone" >
+
+        <include layout="@layout/bangmamatao_loading_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

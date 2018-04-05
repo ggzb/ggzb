@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mouse_stoping_anim"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/drive_mouse_rub00"
+        android:duration="250"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_rub01"
+        android:duration="250"/>
+</animation-list>

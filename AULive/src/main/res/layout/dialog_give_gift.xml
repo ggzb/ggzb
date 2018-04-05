@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:clipChildren="false"
+    >
+
+  <RelativeLayout
+      android:id="@+id/sketchpad"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:background="#bf000000"
+      android:clickable="true"
+       >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/rl_give_title"
+        android:layout_height="40.0dip"
+        android:layout_gravity="top"
+        android:background="#e3000000"
+        >
+      <View
+          android:id="@id/close_dialog"
+          android:layout_width="36.0dip"
+          android:layout_height="36.0dip"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="10.0dip"
+          android:background="@drawable/close_to_down_bkg"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:gravity="center"
+          android:text="个性礼物"
+          android:textColor="@color/white"
+          android:textSize="18.0sp"
+          />
+      <TextView
+          android:id="@+id/clear_all"
+          android:layout_width="36.0dip"
+          android:layout_height="36.0dip"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10.0dip"
+          android:gravity="center"
+          android:text="清除"
+          android:textColor="@color/white"
+          android:textSize="12.0sp"
+          />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_give_show"
+        android:layout_width="fill_parent"
+        android:layout_height="58.0dip"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center|left"
+        android:background="#e3000000"
+        >
+      <TextView
+          android:id="@+id/used_balance_prompt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="15.0dip"
+          android:drawablePadding="4.0dip"
+          android:textColor="@color/white"
+          android:text="在上方选择想要绘制的小礼物"
+          android:textSize="14.0sp"
+           />
+      <ImageView
+          android:id="@+id/iv_icon_diamond"
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:layout_gravity="center"
+          android:visibility="invisible"
+          android:paddingLeft="2dp"
+          android:src="@drawable/redpacket_diamond"/>
+
+    </LinearLayout>
+
+    <com.ilikezhibo.ggzb.avsdk.gift.customized.SketchPadView
+        android:id="@+id/sketchpadview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_give_title"
+        android:background="@drawable/custom_gift_hint_bg"
+        />
+
+    <LinearLayout
+        android:id="@+id/rl_give_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sketchpadview"
+        android:layout_above="@+id/ll_give_show"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+      <include layout="@layout/give_gift_list" />
+
+      <TextView
+          android:id="@+id/send_btn"
+          android:layout_width="82.5dip"
+          android:layout_height="82.5dip"
+          android:layout_marginRight="12.0dip"
+          android:background="@drawable/give_btn_bkg"
+          android:gravity="center"
+          android:text="赠送"
+          android:textColor="#fff"
+          android:textSize="18.0sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/custom_gift_hint"
+        android:layout_width="200.0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_give_title"
+        android:layout_above="@+id/rl_give_gift"
+        android:orientation="vertical"
+        >
+      <ImageView
+          android:layout_width="120.0dip"
+          android:layout_height="120.0dip"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/custom_gift_hint"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:singleLine="true"
+          android:text="在中间区域绘制礼物"
+          android:textColor="@color/gray"
+          android:textSize="14.0sp"
+          />
+    </LinearLayout>
+  </RelativeLayout>
+
+
+</FrameLayout>

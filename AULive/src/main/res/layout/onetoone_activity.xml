@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.WatchSwitchViewPager
+      android:id="@+id/flip_viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      ></com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.WatchSwitchViewPager>
+
+  <com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.FlipRelativelayout
+      android:id="@+id/av_screen_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <RelativeLayout
+        android:id="@+id/camera_preview_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        ></RelativeLayout>
+
+    <com.ilikezhibo.ggzb.avsdk.activity.VideoSurfaceView
+        android:id="@+id/player_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/loading_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        />
+    <ViewFlipper
+        android:id="@+id/body_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <include
+          layout="@layout/av_activity_page0"
+          android:id="@+id/pager0"
+          />
+
+      <include
+          layout="@layout/onetoone_activity_page1"
+          android:id="@+id/layout1"
+          />
+
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/tv_live_uid"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:text="ID:12345678"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone"
+        style="@style/room_publicchat_text"
+        />
+    <!-- 全屏动画-->
+    <include
+        layout="@layout/fullscreen_layout"
+        android:id="@+id/fullscreen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <include
+        layout="@layout/activity_solo"
+        android:id="@+id/call_root_views"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+  </com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.FlipRelativelayout>
+</FrameLayout>

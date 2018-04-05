@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeeee"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:id="@id/topLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <include layout="@layout/jiesihuo_title"/>
+  </LinearLayout>
+
+  <ScrollView
+      android:id="@+id/scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efeeee"
+        android:orientation="vertical"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/marging_line"
+          />
+
+      <RelativeLayout
+          android:id="@+id/aboat_ly"
+          android:layout_width="fill_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/list_item_selector"
+          >
+
+        <ImageView
+            android:id="@+id/itemHeadImg0"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/setting_newmsg"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/item_value0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/itemHeadImg0"
+            android:text="关于西米社区"
+            android:textSize="16sp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/new_msg_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/big_small_pic_selector"
+            android:button="@null"
+            android:checked="true"
+            android:visibility="gone"
+            />
+        <Button
+
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/mm_submenu"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/marging_line"
+            android:orientation="horizontal"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/reply_ly"
+          android:layout_width="fill_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/list_item_selector"
+          >
+
+        <ImageView
+            android:id="@+id/itemHeadImg1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/setting_wuyao"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/item_value1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/itemHeadImg1"
+            android:text="用户反馈"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/hasNewTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_value1"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/item_value1"
+            android:background="@drawable/theme_new"
+            android:visibility="gone"
+            />
+
+        <CheckBox
+            android:id="@+id/wuyao_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/big_small_pic_selector"
+            android:button="@null"
+            android:checked="false"
+            android:visibility="gone"
+            />
+
+        <Button
+
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/mm_submenu"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            />
+        <LinearLayout
+            android:id="@+id/lineLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/marging_line"
+            android:orientation="horizontal"
+            />
+      </RelativeLayout>
+
+
+      <RelativeLayout
+          android:id="@+id/password_modify_layout"
+          android:layout_width="fill_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/list_item_selector"
+          >
+
+        <ImageView
+            android:id="@+id/itemHeadImg2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:src="@drawable/setting_modify_password"
+            />
+
+        <TextView
+            android:id="@+id/item_value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/itemHeadImg2"
+            android:text="重置密码"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/hasNewTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_value2"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/item_value2"
+            android:background="@drawable/theme_new"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/topRightBtn2"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/mm_submenu"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            android:visibility="gone"
+            />
+        <Button
+
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/mm_submenu"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            />
+        <LinearLayout
+            android:id="@+id/lineLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/marging_line"
+            android:orientation="horizontal"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/rl_videochat_managerment"
+          android:layout_width="fill_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/list_item_selector"
+          android:visibility="gone"
+          >
+
+        <ImageView
+            android:id="@+id/itemHead_videochat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/setting_wuyao"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_videochat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/itemHead_videochat"
+            android:text="视频聊天管理"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_videochat_hasNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_videochat"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tv_videochat"
+            android:background="@drawable/theme_new"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/mm_submenu"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            />
+        <LinearLayout
+            android:id="@+id/lineLayout_videochat"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/marging_line"
+            android:orientation="horizontal"
+            />
+      </RelativeLayout>
+      <RelativeLayout
+          android:id="@+id/privavisy_ly"
+          android:layout_width="fill_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/list_item_selector"
+          android:visibility="gone"
+          >
+
+        <ImageView
+            android:id="@+id/itemHeadImg4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/setting_private"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/item_value4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/itemHeadImg4"
+            android:text="我的定位"
+            android:textSize="16sp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/privisy_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/big_small_pic_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+
+
+      </RelativeLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/marging_line"
+          android:visibility="gone"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/marging_line"
+          />
+
+      <RelativeLayout
+          android:id="@+id/blacklist_layout"
+          android:layout_width="fill_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/list_item_selector"
+          android:visibility="gone"
+          >
+
+        <ImageView
+            android:id="@+id/itemHeadImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/setting_video"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/itemHeadImg"
+            android:text="黑名单"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/hasNewTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_value"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/item_value"
+            android:background="@drawable/theme_new"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/topRightBtn"
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/mm_submenu"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:text=""
+            android:textColor="@color/global_main_bg"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/lineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:background="@color/marging_line"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/marging_line"
+            android:orientation="horizontal"
+            />
+
+
+      </RelativeLayout>
+      <!--<RelativeLayout-->
+          <!--android:id="@+id/problem_layout"-->
+          <!--android:layout_width="fill_parent"-->
+          <!--android:layout_height="50dp"-->
+          <!--android:background="@drawable/list_item_selector"-->
+          <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/itemHeadImg_problem"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:src="@drawable/setting_video"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/item_value_peoblem"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_toRightOf="@+id/itemHeadImg_problem"-->
+            <!--android:text="常见问题"-->
+            <!--android:textSize="16sp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/hasNewTv_peroblem"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignTop="@+id/item_value_peoblem"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:layout_toRightOf="@+id/item_value_peoblem"-->
+            <!--android:background="@drawable/theme_new"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/topRightBtn_problem"-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="14dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="20dip"-->
+            <!--android:background="@drawable/mm_submenu"-->
+            <!--android:textColor="#ffffffff"-->
+            <!--android:textSize="11sp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="20dip"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/global_main_bg"-->
+            <!--android:textSize="18sp"-->
+            <!--/>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/lineLayout_problem"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5px"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:background="@color/marging_line"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+      <!--</RelativeLayout>-->
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/marging_line"
+          />
+
+      <Button
+          android:id="@+id/quit_button"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="40dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="40dp"
+          android:background="@drawable/button_shape_selector"
+          android:text="退出"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          >
+      </Button>
+      <TextView
+          android:id="@+id/version_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_marginTop="5dp"
+          android:textSize="16sp"
+          android:layout_gravity="center_horizontal"
+          android:textColor="@color/graylight2"
+          />
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

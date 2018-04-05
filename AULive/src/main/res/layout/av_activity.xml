@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.WatchSwitchViewPager
+      android:id="@+id/flip_viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      ></com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.WatchSwitchViewPager>
+
+  <com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.FlipRelativelayout
+      android:id="@+id/av_screen_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+    <com.ilikezhibo.ggzb.avsdk.activity.VideoSurfaceView
+        android:id="@+id/player_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/loading_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <ViewFlipper
+        android:id="@+id/body_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <include
+          layout="@layout/av_activity_page0"
+          android:id="@+id/pager0"
+          />
+
+      <include
+          layout="@layout/av_activity_page1"
+          android:id="@+id/layout1"
+          />
+
+    </ViewFlipper>
+    <!-- 主播警告-->
+    <include
+        layout="@layout/host_is_warning_layout"
+        android:id="@+id/host_is_warning_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/super_manager_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        >
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="20dp"
+          android:orientation="vertical"
+          >
+
+        <Button
+            android:id="@+id/tui_jian_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="推荐直播"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+        <Button
+            android:id="@+id/zhi_din_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="置顶直播"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+        <Button
+            android:id="@+id/tong_guo_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="审核-通过"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+        <Button
+            android:id="@+id/jing_gao_jiechu_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="警告解除"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/operate_record"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="操作记录"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="20dp"
+          android:orientation="vertical"
+          >
+        <Button
+            android:id="@+id/yin_chang_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="关闭直播"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+
+            />
+        <Button
+            android:id="@+id/jin_bo_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="禁止直播"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+        <Button
+            android:id="@+id/ju_jue_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="审核-隐藏"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/chong_zhi_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="重置信息"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+        <Button
+            android:id="@+id/jing_gao_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/main_btn_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="警告主播"
+            android:textColor="@drawable/release_viedo_text_selector"
+            android:textSize="14sp"
+            />
+      </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_live_uid"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:text="ID:12345678"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        style="@style/room_publicchat_text"
+        />
+
+    <!-- 全屏动画-->
+    <include
+        layout="@layout/fullscreen_layout"
+        android:id="@+id/fullscreen_layout"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        />
+
+    <!-- 座驾动画 -->
+    <RelativeLayout
+        android:id="@+id/user_drive_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </RelativeLayout>
+
+    <!-- 私聊列表-->
+    <include
+        layout="@layout/qav_private_chat_list_layout_roomchat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        />
+
+    <!-- 私聊界面-->
+    <include
+        layout="@layout/qav_private_chat_layout_roomchat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        />
+    <!--管理员列表-->
+    <FrameLayout
+        android:id="@+id/mManagerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        ></FrameLayout>
+
+
+
+    <!-- 主播离开—提示-->
+    <include
+        layout="@layout/host_is_leave_layout"
+        android:id="@+id/host_is_leave_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+
+  </com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.FlipRelativelayout>
+  <com.ilikezhibo.ggzb.avsdk.activity.roomfliphelper.TouchDelegateView
+      android:id="@+id/touch_delegate_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="150dp"
+      android:visibility="gone"
+      />
+
+</FrameLayout>

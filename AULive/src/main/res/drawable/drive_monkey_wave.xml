@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horse_wave_anim"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/drive_monkey_wave00"
+        android:duration="200"/>
+
+    <item
+        android:drawable="@drawable/drive_monkey_wave01"
+        android:duration="200"/>
+</animation-list>

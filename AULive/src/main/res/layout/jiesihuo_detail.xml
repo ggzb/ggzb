@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_globle"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/jiesihuo_title" />
+    </LinearLayout>
+
+    <com.ilikezhibo.ggzb.pull.widget.PullToRefreshView
+        xmlns:stay="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutSend"
+        android:layout_below="@id/topLayout"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:gravity="center"
+        android:headerDividersEnabled="false"
+        android:layoutAnimation="@anim/list_controller"
+        android:persistentDrawingCache="all"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:visibility="visible"
+        stay:pullMode="scrollBottom" />
+
+    <include
+        android:id="@+id/layoutSend"
+        android:layout_alignParentBottom="true"
+        layout="@layout/forum_bottom_send_msg" />
+
+
+</RelativeLayout>

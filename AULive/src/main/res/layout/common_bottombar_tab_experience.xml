@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tab_item_group_tv_label"
+        style="@style/Style.TabItem.Label"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/ic_tab_friend"
+         android:gravity="center_horizontal|bottom"
+           android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:text="品牌团" />
+    <TextView
+        android:id="@+id/tab_unread_bg_group"
+        android:layout_width="8dp"
+        android:layout_height="8dp"  
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/tab_item_group_tv_label"
+        android:layout_marginRight="-8.0dip"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tab_unread_bg"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

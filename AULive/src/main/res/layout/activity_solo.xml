@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_solo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    >
+
+
+  <TextView
+      android:id="@+id/tv_solo_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="桃花谷主"
+      android:textSize="24sp"
+      />
+
+  <TextView
+      android:id="@+id/tv_solo_loading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_solo_name"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:text="正在等待对方接听..."
+      android:textColor="@color/main_gray"
+      android:textSize="12sp"
+      />
+
+  <ImageView
+      android:id="@+id/onetoone_call_bg_iv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tv_solo_loading"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="58dp"
+      />
+
+  <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+      android:id="@+id/riv_face"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_below="@+id/tv_solo_loading"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="58dp"
+      android:src="@drawable/app_icon"
+      imagecontrol:border_inside_color="@color/whitesmoke"
+      imagecontrol:border_thickness="1.5dp"
+      />
+
+  <LinearLayout
+      android:id="@+id/ll_solo_control"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/riv_face"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="60dp"
+      android:orientation="horizontal"
+      >
+
+    <CheckBox
+        android:id="@+id/cb_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/onetoone_mute_selector"
+        android:button="@null"
+        android:checked="false"
+        android:visibility="gone"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_no_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/onetoone_no_sound_selector"
+        android:button="@null"
+        android:checked="false"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_front_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/onetoone_camera_front_selector"
+        android:button="@null"
+        android:checked="true"
+        />
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:id="@+id/ll_get_close"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ll_solo_control"
+      android:layout_centerHorizontal="true"
+      android:gravity="center_horizontal"
+      android:orientation="horizontal"
+      >
+
+    <ImageView
+        android:id="@+id/cancel_call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/call_solo_ic"
+        />
+
+    <ImageView
+        android:id="@+id/anser_call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/call_solo_ic_get"
+        android:visibility="gone"
+        />
+
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:id="@+id/ll_leave_msg"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ll_get_close"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:visibility="gone"
+      >
+
+    <TextView
+        android:id="@+id/onetoone_recive_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本次视频将获得20魅力/分钟奖励哦"
+        android:textColor="@color/global_main_bg"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/onetoone_leave_msg"
+        android:drawablePadding="3dp"
+        android:text="留言"
+        android:textColor="@color/global_main_bg"
+        android:textSize="16sp"
+        />
+
+
+  </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tiger_stop_anim"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/drive_tiger_stop00"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_tiger_stop01"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_tiger_stop02"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_tiger_stop03"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_tiger_stop04"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_tiger_stop05"
+        android:duration="50"/>
+</animation-list>

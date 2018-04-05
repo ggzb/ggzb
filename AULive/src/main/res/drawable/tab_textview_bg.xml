@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/global_main_bg" />
+    <corners android:topRightRadius="@dimen/room_gold_count_bg"
+        android:bottomRightRadius="@dimen/room_gold_count_bg"
+        android:bottomLeftRadius="25.0sp"
+        android:topLeftRadius="25.0sp"
+        />
+</shape>

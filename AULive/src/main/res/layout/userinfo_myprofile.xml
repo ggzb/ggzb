@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/review_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/jiesihuo_title" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/forum_create_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/basic_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="头像:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <ImageView
+                            android:id="@+id/face_img"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:clickable="true"
+                            android:src="@drawable/btn_photo_add" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:id="@+id/fisrt_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="姓名:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/real_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7.0dip"
+                            android:lineSpacingExtra="5.0dip"
+                            android:text="黄一"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="姓别:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/ssex_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7.0dip"
+                            android:lineSpacingExtra="5.0dip"
+                            android:text="男"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="出生日期:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/birthday_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="2010-01-02"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+                </LinearLayout>
+                <!-- 应用案例 -->
+
+                <LinearLayout
+                    android:id="@+id/app_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/main_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <!-- <include -->
+                        <!-- android:id="@+id/first_item" -->
+                        <!-- layout="@layout/userinfo_myproduct_item" /> -->
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+                </LinearLayout>
+
+                <!-- 职业与技能 -->
+
+                <LinearLayout
+                    android:id="@+id/skill_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:id="@+id/main_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <!-- <include layout="@layout/step_shihuo_edu_item"  android:id="@+id/first_item"/> -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/photo_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="12.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingTop="12.0dip" >
+
+                        <LinearLayout
+                            android:id="@+id/buy_price_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:gravity="center|left"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5.0dip"
+                                android:text="我的技能:"
+                                android:textColor="#ff595857"
+                                android:textSize="15.0sp" />
+
+                            <TextView
+                                android:id="@+id/skill_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15.0dip"
+                                android:layout_marginRight="5.0dip"
+                                android:text="android,ios"
+                                android:maxLines="5"
+                                android:textColor="#ff595857"
+                                android:textSize="17.0sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/line_solid" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center|left"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30.0dip"
+                                android:lineSpacingExtra="5.0dip"
+                                android:text="职业:"
+                                android:textColor="#ff595857"
+                                android:textSize="15.0sp" />
+
+                            <TextView
+                                android:id="@+id/major_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15.0dip"
+                                android:layout_marginRight="15.0dip"
+                                android:lineSpacingExtra="5.0dip"
+                                android:text="移动开发"
+                                android:textColor="#ff595857"
+                                android:textSize="17.0sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+                </LinearLayout>
+
+                <!-- 公司 -->
+
+                <LinearLayout
+                    android:id="@+id/company_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="公司名称:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/company_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7.0dip"
+                            android:lineSpacingExtra="5.0dip"
+                            android:text="深圳腾讯"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="担任职位:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/position_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7.0dip"
+                            android:lineSpacingExtra="5.0dip"
+                            android:text="项目经理"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="在职时间:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/company_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="2010-01-02至2013-02-03"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="工作描述:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/work_desc_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="3dp"
+                            android:text="费里尼带观众进入这幅意大利上层社会风情画 "
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+                </LinearLayout>
+
+                <!-- 教育 -->
+
+                <LinearLayout
+                    android:id="@+id/edu_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:id="@+id/buy_price_layout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="学校名称:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/school_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7.0dip"
+                            android:lineSpacingExtra="5.0dip"
+                            android:text="清华大学"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="专业:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/school_major_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7.0dip"
+                            android:lineSpacingExtra="5.0dip"
+                            android:text="计算机科学"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="学历:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/degree_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="本科"
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="在校时间:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/school_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="2010-01-02至2013-02-03 "
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+                </LinearLayout>
+
+                <!-- 个人简介 -->
+
+                <LinearLayout
+                    android:id="@+id/personal_intro_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:minHeight="44.0dip"
+                        android:orientation="vertical"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="14.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_marginTop="7dp"
+                            android:text="个人简介:"
+                            android:textColor="#ff595857"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/short_intro_myselft"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="第三季度拉克丝是的家乐福老师看见了地方查轲模对了发觉要发倒垃圾对了发觉奋进工夺回 工的伐啦考虑进来看是的甲方就是对了附件是的方式对了看见方式 "
+                            android:textColor="#ff595857"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line_solid" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/backgroud_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#5f000000"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

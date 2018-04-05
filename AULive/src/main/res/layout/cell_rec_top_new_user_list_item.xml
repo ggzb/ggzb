@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/bg_rec_top"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:minHeight="220dp">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="162dp"
+            android:layout_height="116.5dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/bg_rec_top_zhuangshi"/>
+        <RelativeLayout
+            android:layout_marginTop="39.5dp"
+            android:id="@+id/rl_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+            <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+                xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/user_portrait"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_head"
+                imagecontrol:border_thickness="0dp"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="第一名"
+            android:textSize="15sp"
+            android:textColor="#fccd3f"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ll_name"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_first"
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="我是说"
+                android:id="@+id/txt_username"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/image_grade"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+
+                android:background="@drawable/icon_medal_32_1"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ll_name"
+            android:layout_marginTop="4dp"
+            android:id="@+id/txt_info"
+            android:text="送出110"
+            android:gravity="left"
+            android:textSize="13sp"
+            android:textColor="#dddddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/txt_follow"
+            android:gravity="center"
+            android:background="@drawable/shape_circle_rectangle_white_0000000"
+            android:textSize="15sp"
+            android:text="关注"
+            android:textColor="@color/white"
+            android:layout_width="65dp"
+            android:layout_height="35dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="9dp"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新&#8230;</string>
+    <string name="pull_to_refresh_release_label">释放刷新&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">加载中，请稍候...&#8230;</string>
+    <string name="pull_to_refresh_tap_label">加载&#8230;</string>
+    <string name="mPullToRefresh">网络不给力，妹纸和帅哥不出来</string>
+    <string name="mPullToRefreshStr">下拉刷新</string>
+    <string name="mReleaseToRefresh">释放刷新</string>
+    <string name="mListRefreshing">刷新中，请稍候...</string>
+    <string name="ptr_load_more">加载更多～～</string>
+    <string name="video_mPullToRefreshStr">小手一抖，妹纸到手</string>
+    <string name="video_mReleaseToRefresh">放手吧,换一大波妹纸和帅哥</string>
+    <string name="video_mListRefreshing">刷新中，妹纸帅哥马上就出来</string>
+    <string name="video_ptr_load_more">妹纸帅哥马上就出来～～</string>
+
+</resources>

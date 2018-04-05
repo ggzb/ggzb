@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tab_item_nearby_tv_label"
+        style="@style/Style.TabItem.Label"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/ic_tab_nearby"
+        android:gravity="center_horizontal"
+        android:textSize="0sp"
+        android:text="直播" />
+
+    <TextView
+        android:id="@+id/tab_unread_bg_spe_sell"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/tab_item_nearby_tv_label"
+        android:layout_marginRight="-8.0dip"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tab_unread_bg"
+        android:gravity="center"
+        android:paddingRight="3dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

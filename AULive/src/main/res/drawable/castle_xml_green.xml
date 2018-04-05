@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@drawable/castle_flower_green01"
+        android:duration="@integer/rain_duration" />
+
+    <item
+        android:drawable="@drawable/castle_flower_green02"
+        android:duration="@integer/rain_duration" />
+
+    <item
+        android:drawable="@drawable/castle_flower_green03"
+        android:duration="@integer/rain_duration" />
+
+    <item
+        android:drawable="@drawable/castle_flower_green04"
+        android:duration="@integer/rain_duration" />
+
+    <item
+        android:drawable="@drawable/castle_flower_green05"
+        android:duration="@integer/rain_duration" />
+
+    <item
+        android:drawable="@drawable/castle_flower_green06"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green07"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green08"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green09"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green10"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green11"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green12"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green13"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green14"
+        android:duration="@integer/rain_duration" />
+    <item
+        android:drawable="@drawable/castle_flower_green15"
+        android:duration="@integer/rain_duration" />
+
+    <item
+        android:drawable="@drawable/castle_rain_empty"
+        android:duration="@integer/rain_duration" />
+</animation-list>

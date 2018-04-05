@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="fill_horizontal|center" >
+
+    <ImageView
+        android:id="@+id/content_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14.0dip"
+        android:ellipsize="start"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:text="abc.doc"
+        android:textColor="#ff383c3c"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

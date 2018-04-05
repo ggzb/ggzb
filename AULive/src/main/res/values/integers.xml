@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="heart_anim_bezier_factor">6</integer>
+    <integer name="anim_duration">4000</integer>
+  <integer name="continue_gift_show_duration">600</integer>
+  <integer name="gift_full_heart_anim_frame">50</integer>
+    <integer name="rain_duration">120</integer>
+</resources>

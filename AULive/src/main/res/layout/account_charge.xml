@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/buy_diamond_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/jiesihuo_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                style="@style/setting_group_container"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_buy_diamond"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/recharge_background"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_balance_tip"
+                        android:layout_centerVertical="true"
+                        style="@style/gift_contributor_total_coin"
+                        android:text="我的钻石"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_balance"
+                        style="@style/text_charinfor_balance"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_toRightOf="@id/txt_balance_tip"
+                        android:text="0"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:visibility="gone"
+                >
+
+                <com.ilikezhibo.ggzb.views.MyGridView
+                    android:id="@+id/chose_item_ly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="15dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="15dp">
+
+                </com.ilikezhibo.ggzb.views.MyGridView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pay_choose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/txt_choose_paymethod_tip"
+                    style="@style/charinfor_tip_text"
+                    android:text="请选择支付方式" />
+
+                <LinearLayout
+                    android:id="@+id/grid_paymethods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/weixin_type"
+                        layout="@layout/cell_pay_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/alipay_type"
+                        layout="@layout/cell_pay_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_choose_chargeinfo_tip"
+                    style="@style/charinfor_tip_text"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:text="支付方式:微信支付" />
+                <!--<TextView-->
+                <!--android:id="@+id/txt_charge_tip1"-->
+                <!--style="@style/charinfor_tip_text"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:text="充值遇到问题请与官方客服联系:QQ88888888" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

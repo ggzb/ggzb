@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cell_giftcontributoritem_container"
+    >
+  <TextView
+      android:id="@+id/rank_num"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="No.4"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:textColor="@color/text_color"
+      android:textSize="15dp"
+      android:layout_marginRight="10dp"
+      android:visibility="gone"
+      />
+  <include
+      layout="@layout/cell_user_infor"
+      android:id="@+id/user_info_container"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@id/rank_num"
+      android:layout_toLeftOf="@+id/img_follow"
+      />
+  <ImageView
+      android:id="@+id/img_follow"
+      android:contentDescription="@string/app_name"
+      android:src="@drawable/me_follow"
+      style="@style/cell_useritem_imgfollow"
+      />
+</RelativeLayout>

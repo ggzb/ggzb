@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/rg_gift_list"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal"
+    tools:showIn="@layout/dialog_give_gift">
+
+    <RadioButton
+        android:id="@+id/rb_gift_one"
+        android:drawablePadding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:button="@null"
+        android:drawableTop="@drawable/draw_gift_item0"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#fff" />
+
+    <View
+        android:id="@+id/iv_gift_one"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/iv_gift_chosen_selector"/>
+
+    <RadioButton
+        android:id="@+id/rb_gift_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:button="@null"
+        android:drawableTop="@drawable/draw_gift_item1"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#fff" />
+
+    <View
+        android:id="@+id/iv_gift_two"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/iv_gift_chosen_selector" />
+
+    <RadioButton
+        android:id="@+id/rb_gift_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:button="@null"
+        android:drawableTop="@drawable/draw_gift_item2"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#fff" />
+
+    <View
+        android:id="@+id/iv_gift_three"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/iv_gift_chosen_selector" />
+
+    <RadioButton
+        android:id="@+id/rb_gift_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:button="@null"
+        android:drawableTop="@drawable/draw_gift_item3"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#fff" />
+
+    <View
+        android:id="@+id/iv_gift_four"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/iv_gift_chosen_selector" />
+
+
+</RadioGroup>

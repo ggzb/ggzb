@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ondate_voice_id"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/voice_playing_a"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/voice_playing_b"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/voice_playing_c"
+        android:duration="150"/>
+</animation-list>

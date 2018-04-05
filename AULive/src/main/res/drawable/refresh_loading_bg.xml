@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flaganim"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/ic_loading_40x40_01"
+        android:duration="30"/>
+
+    <item
+        android:drawable="@drawable/ic_loading_40x40_02"
+        android:duration="30"/>
+
+    <item
+        android:drawable="@drawable/ic_loading_40x40_03"
+        android:duration="30"/>
+
+    <item
+        android:drawable="@drawable/ic_loading_40x40_04"
+        android:duration="30"/>
+
+    <item
+        android:drawable="@drawable/ic_loading_40x40_05"
+        android:duration="30"/>
+
+    <item
+        android:drawable="@drawable/ic_loading_40x40_06"
+        android:duration="30"/>
+
+    <item
+        android:drawable="@drawable/ic_loading_40x40_07"
+        android:duration="30"/>
+
+    <item
+        android:drawable="@drawable/ic_loading_40x40_08"
+        android:duration="30"/>
+ <item
+        android:drawable="@drawable/ic_loading_40x40_09"
+        android:duration="30"/>
+</animation-list>

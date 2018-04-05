@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/room_full_screen_gift_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <RelativeLayout
+      android:id="@+id/wedding_dress_ly"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      >
+
+    <ImageView
+        android:id="@+id/wedding_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#66000000"
+        android:scaleType="fitCenter"
+        />
+    <ImageView
+        android:id="@+id/shoes_angle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/crown_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wedding_dress_button_light"
+      android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/crown_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wedding_dress"
+        android:visibility="gone"
+
+        />
+    <ImageView
+        android:id="@+id/shine_star_on_shoes_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/crown_iv"
+        android:layout_alignRight="@+id/crown_iv"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wedding_dress_star1"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/shoes_star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crown_iv"
+        android:layout_alignTop="@+id/crown_iv"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="-5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wedding_dress_star2"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/shoes_star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crown_iv"
+        android:layout_alignTop="@+id/crown_iv"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wedding_dress_star3"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/shoes_star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/crown_iv"
+        android:layout_alignTop="@+id/crown_iv"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wedding_dress_star3"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/shoes_angle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crown_iv"
+        android:layout_alignTop="@+id/crown_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="75dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wedding_dress_star4"
+        android:visibility="gone"
+        />
+
+
+    <ImageView
+        android:id="@+id/shoes_angle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wedding_dress_top_light"
+        android:visibility="gone"
+        />
+
+
+    <snowdrop.HeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+
+      <ImageView
+          android:id="@+id/car_one_redpoint"
+          android:layout_width="12.0dip"
+          android:layout_height="12.0dip"
+          android:layout_gravity="center_vertical"
+          android:scaleType="fitCenter"
+          android:src="@drawable/gift_common_redpoint"
+          />
+
+      <TextView
+          android:id="@+id/room_gift_car_one_send_person"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:ellipsize="middle"
+          android:gravity="center_vertical"
+          android:shadowColor="@color/room_gift_text_shadow"
+          android:shadowDx="2.0"
+          android:shadowDy="2.0"
+          android:shadowRadius="1.0"
+          android:singleLine="true"
+          android:text="big赠"
+          android:textColor="@android:color/white"
+          android:textSize="16.0sp"
+          />
+    </LinearLayout>
+  </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+include ':weiboSDK'
+include ':AULive'
+include ':IMKit'

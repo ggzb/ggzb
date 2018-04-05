@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:layout_marginTop="0dp"
+      android:background="@color/marging_line"
+      android:orientation="vertical"
+      />
+
+  <LinearLayout
+      android:id="@+id/in_out_record"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/suggest"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      >
+
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:id="@+id/aboat"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:id="@+id/my_vip"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="5dp"
+      android:layout_marginTop="0dp"
+      android:background="#FFF6F6F6"
+      android:orientation="vertical"
+      />
+
+  <LinearLayout
+      android:id="@+id/certification"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      >
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/miaobi_gongxianbang"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      >
+
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/miaoqu_my_live"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      >
+
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/invite_friends"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      >
+
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/setting"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <include layout="@layout/item_home_find_my_listitem"/>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:layout_marginBottom="30dp"
+      android:background="@color/marging_line"
+      />
+</LinearLayout>

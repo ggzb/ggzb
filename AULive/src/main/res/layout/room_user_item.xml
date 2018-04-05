@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+  <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+      xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/img_room_creator"
+      android:layout_width="34.0dip"
+      android:layout_height="34.0dip"
+      android:layout_marginBottom="@dimen/room_usernum_stroke"
+      android:layout_marginLeft="7dp"
+      android:layout_marginTop="@dimen/room_usernum_stroke"
+      imagecontrol:border_outside_color="@color/global_main_bg"
+      imagecontrol:border_thickness="1.0dp"
+      />
+  <ImageView
+      android:id="@+id/img_user_type"
+      android:layout_width="13.0dip"
+      android:layout_height="13.0dip"
+      android:layout_alignBottom="@id/img_room_creator"
+      android:layout_alignRight="@id/img_room_creator"
+      android:contentDescription="@string/app_name"
+      android:visibility="gone"
+      />
+</RelativeLayout>

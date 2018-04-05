@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/room_full_screen_gift_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <RelativeLayout
+      android:id="@+id/f521_ly"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="70dp"
+      android:visibility="gone"
+      >
+
+
+    <ImageView
+        android:id="@+id/right_wing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/five_521_wing"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/crown_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/five521_red_rose"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32.0dip"
+        android:layout_alignBottom="@+id/crown_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-40dp"
+        >
+
+      <ImageView
+          android:id="@+id/car_one_redpoint"
+          android:layout_width="12.0dip"
+          android:layout_height="12.0dip"
+          android:layout_gravity="center_vertical"
+          android:scaleType="fitCenter"
+          android:src="@drawable/gift_common_redpoint"
+          />
+
+      <TextView
+          android:id="@+id/room_gift_car_one_send_person"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:ellipsize="middle"
+          android:gravity="center_vertical"
+          android:shadowColor="@color/room_gift_text_shadow"
+          android:shadowDx="2.0"
+          android:shadowDy="2.0"
+          android:shadowRadius="1.0"
+          android:singleLine="true"
+          android:text="big赠"
+          android:textColor="@android:color/white"
+          android:textSize="16.0sp"
+          />
+    </LinearLayout>
+  </RelativeLayout>
+</RelativeLayout>

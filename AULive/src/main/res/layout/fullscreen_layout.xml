@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_screen_gift_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!--<include-->
+    <!--layout="@layout/fullscreen_car1"-->
+    <!--android:id="@+id/fullscreen_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <!--<include-->
+    <!--layout="@layout/fullscreen_car2"-->
+    <!--android:id="@+id/fullscreen_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+
+
+    <!--<include-->
+    <!--layout="@layout/fullscreen_car3_down"-->
+    <!--android:id="@+id/fullscreen_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <!--<include-->
+    <!--layout="@layout/fullscreen_car3_up"-->
+    <!--android:id="@+id/fullscreen_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <!--<include-->
+    <!--layout="@layout/fullscreen_plane"-->
+    <!--android:id="@+id/fullscreen_plane_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <!--<include-->
+    <!--layout="@layout/fullscreen_ship"-->
+    <!--android:id="@+id/fullscreen_ship_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <!--<include-->
+    <!--layout="@layout/fullscreen_firework"-->
+    <!--android:id="@+id/fullscreen_ship_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <!--<include-->
+    <!--layout="@layout/fullscreen_propose"-->
+    <!--android:id="@+id/fullscreen_propose_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+</RelativeLayout>

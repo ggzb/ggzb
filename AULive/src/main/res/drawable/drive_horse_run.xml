@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horse_run_anim"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/drive_horse_run00"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_horse_run01"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_horse_run02"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_horse_run03"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_horse_run04"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_horse_run05"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_horse_run06"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_horse_run07"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/drive_horse_run08"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_horse_run09"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/drive_horse_run10"
+        android:duration="40"/>
+</animation-list>

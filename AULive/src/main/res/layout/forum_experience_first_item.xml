@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/review_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fffcfcfc"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_solid" />
+
+    <RelativeLayout
+        android:id="@+id/relative_avatar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/avatar_layout"
+            android:layout_width="34.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginTop="14.0dip" >
+
+            <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+                android:id="@+id/forum_review_avatar"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/loading" />
+
+            <TextView
+                android:id="@+id/tvLevelForumReview"
+                android:layout_width="@dimen/level_tv_big_width"
+                android:layout_height="@dimen/level_tv_big_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_level_boy_big_tv"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="15"
+                android:textColor="@color/white"
+                android:textSize="9.0sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/tvMedalForumReview"
+                android:layout_width="@dimen/level_tv_big_width"
+                android:layout_height="@dimen/level_tv_big_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13.0dip"
+            android:layout_toRightOf="@id/avatar_layout" >
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:maxLength="9"
+                android:paddingLeft="5.0dip"
+                android:text="楼主名字"
+                android:textColor="#ff595857"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:id="@+id/landlord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@id/tv_nickname"
+                android:src="@drawable/icon_landlord" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/relativeNickName"
+            android:layout_below="@id/relativeNickName"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/forum_review_medal_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4.0dip"
+                android:text="公主殿下"
+                android:textColor="#ffc0c6c9"
+                android:textSize="12.0sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/icon_forum_review_time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4.0dip"
+                android:text="08-14"
+                android:textColor="#ffc0c6c9"
+                android:textSize="9.0sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/content_operate_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/avatar_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/experience_detail_discus"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/forum_review_stamper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="13.0dip"
+        android:text="这是标题"
+        android:textColor="#ff38383c"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <WebView
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="12.0dip"
+        android:lineSpacingExtra="5.0dip"
+        android:text="这是内容，很多的的内容"
+        android:textColor="#ff595857"
+        android:textSize="15.0sp" />
+
+    <LinearLayout
+        android:id="@+id/imageviews_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="@dimen/forum_review_img_leftspace"
+        android:paddingRight="@dimen/forum_review_img_rightspace"
+        android:paddingTop="13.0dip" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/save_and_buy_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="分享"
+            android:background="@drawable/button_selector"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/experience_save"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" >
+        </Button>
+    </LinearLayout>
+
+     <RelativeLayout
+                android:id="@+id/bannercontainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.1dp"
+                android:visibility="gone" >
+            </RelativeLayout>
+            
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_solid" />
+
+</LinearLayout>

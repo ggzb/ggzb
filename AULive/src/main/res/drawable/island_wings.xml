@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horse_run_anim"
+    android:oneshot="false" >
+
+  <item
+      android:drawable="@drawable/island_wing1"
+      android:duration="200"/>
+
+    <item
+        android:drawable="@drawable/island_wing2"
+        android:duration="200"/>
+
+    <item
+        android:drawable="@drawable/island_wing3"
+        android:duration="200"/>
+
+    <item
+        android:drawable="@drawable/island_wing4"
+        android:duration="200"/>
+
+    <item
+        android:drawable="@drawable/island_wing5"
+        android:duration="200"/>
+  <item
+      android:drawable="@drawable/island_wing4"
+      android:duration="200"/>
+
+  <item
+      android:drawable="@drawable/island_wing3"
+      android:duration="200"/>
+  <item
+      android:drawable="@drawable/island_wing2"
+      android:duration="200"/>
+</animation-list>

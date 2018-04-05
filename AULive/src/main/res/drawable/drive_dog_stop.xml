@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dog_stop_anim"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/drive_dog_stop00"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_dog_stop01"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_dog_stop02"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_dog_stop03"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_dog_stop04"
+        android:duration="50"/>
+
+    <item
+        android:drawable="@drawable/drive_dog_stop05"
+        android:duration="50"/>
+</animation-list>

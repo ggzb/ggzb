@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="tab_backgroud">#F2F2F2</color>
+  <color name="main_bg">#fff3f3f2</color>
+  <color name="chat_main_bg">#efeeee</color>
+  <color name="chat_list_bg">#ccffff</color>
+  <color name="huaquan_inside">#00FFFF28</color>
+  <color name="btn_gray_normal">#66c0c0c0</color>
+  <color name="top_bar_normal_bg">#4ebcd3</color>
+  <color name="grid_state_pressed">#1Affffff</color>
+  <color name="grid_state_focused">#80000000</color>
+  <color name="global_bg_select">#DEDEDE</color>
+  <color name="global_text_color">#ff666666</color>
+
+  <!--<color name="global_main_bg">#E40A0A</color>-->
+  <!--<color name="global_main_bg2">#E40A0A</color>-->
+
+  <color name="global_main_bg">#ff9900</color>
+  <color name="global_main_bg2">#ff9900</color>
+
+  <color name="devideline">#ffd0c9b8</color>
+  <color name="text_color">#ff434343</color>
+  <color name="graylight2">#B0B0B0</color>
+  <color name="graylight">#CFCFCF</color>
+  <color name="silver">#C0C0C0</color>
+  <color name="home_square_bg">#FFFBF0E3</color>
+  <color name="white">#ffffffff</color>
+  <color name="chargeinfor_middletext">#ffbebebe</color>
+  <color name="text_paymethod_name">#ff818181</color>
+  <color name="c_999999">#ff999999</color>
+  <color name="black">#ff000000</color>
+  <color name="water_fall_text_bg">#fbf3e8</color>
+  <color name="water_fall_text">#94918d</color>
+  <color name="gray">#ff454545</color>
+  <color name="red">#ffff0000</color>
+  <color name="conflict">#941100</color>
+  <color name="CambridgeBlue">#63B6E0</color>
+  <color name="pink">#ffFF0000</color>
+  <color name="blue">#ff2a64c8</color>
+  <color name="yellow">#ffffff00</color>
+  <color name="gold_color">#ffcc33</color>
+
+  <color name="dark_yellow">#ffdd8400</color>
+  <color name="photo_gallery_bg">#4c000000</color>
+  <color name="photo_gallery_layout_bg">#80000000</color>
+  <color name="subhead_text">#ff848484</color>
+  <color name="item_time">#999999</color>
+  <color name="item_content">#595959</color>
+  <color name="item_bg">#f5f5f5</color>
+  <color name="write_bg">#fcf9e5</color>
+  <color name="link_text">#d5ac53</color>
+  <color name="fossa_son_bg">#f4f5f5</color>
+  <color name="smail_text">#999999</color>
+  <color name="smail_title_">#444444</color>
+  <color name="transparent">#00000000</color>
+  <color name="enable">#1d419d</color>
+  <color name="disable">#9b9b9b</color>
+  <color name="tabview_text_h">#cb7081</color>
+  <color name="tabview_text_n">#666666</color>
+  <color name="activity_bg">#342c39</color>
+  <color name="pointer_h">#b46674</color>
+  <color name="pointer_n">#504556</color>
+  <color name="list_selector">#342c39</color>
+  <color name="result_view">#b0000000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="possible_result_points">#c0ffff00</color>
+  <color name="profile_avater_cover_selected">#7f000000</color>
+  <color name="profile_avater_cover_normal">#00000000</color>
+  <color name="dialog_listitem_press">#ffd0dce4</color>
+  <color name="dialog_divider">#ffbfcbd3</color>
+  <color name="gl_background">#fff4ecd8</color>
+  <color name="window_bg">#ffeef1f3</color>
+  <color name="qqblue">#ff54acea</color>
+  <color name="background_globle">#fff5f5eb</color>
+  <color name="bg_globle">#fffcf8</color>
+  <color name="globle_text_black">#ff2a2a2a</color>
+  <color name="globle_text_gray">#ffb9b9b9</color>
+  <color name="marging_line">#ffc8c7cc</color>
+
+  <!-- 用户信息字体颜色 -->
+  <color name="user_instr_color">#fff</color>
+  <color name="already_read_font_color">#ff2b4490</color>
+  <color name="no_read_font_color">#ffd93a49</color>
+
+
+  <!-- chat -->
+  <color name="chat_send_gray">#ff535353</color>
+
+  <!-- record video -->
+  <color name="text_gray2">#ffC3C3C3</color>
+  <color name="darkgray">#404040ff</color>
+  <color name="green">#0ff0ff</color>
+  <color name="lightgray">#c0c0c0ff</color>
+  <color name="magenta">#ff6699ff</color>
+  <color name="cyan">#66ffffff</color>
+  <color name="transparent_black">#ff000000</color>
+  <color name="background_dark">#f0f0f0</color>
+  <color name="camera_bg">#2c2c2c</color>
+  <color name="camera_progress">#2980B9</color>
+  <color name="camera_progress_split">#005084</color>
+  <color name="camera_progress_three">#24ff00</color>
+  <color name="camera_progress_overflow">#1b5d89</color>
+  <color name="camera_theme_selected_bgcolor">#2980B9</color>
+  <color name="title_background_color">#fcb840</color>
+  <color name="camera_progress_delete">#f68b2b</color>
+  <color name="translucent_background_80">#CC000000</color>
+  <color name="translucent_background_50">#7f000000</color>
+  <color name="transparent_black_40">#66000000</color>
+  <color name="transparent_black_85">#DA000000</color>
+  <color name="transparent_black_30">#4D000000</color>
+  <color name="camera_bottom_press_bg">#1b1c1f</color>
+
+  <!-- 注册背景 -->
+  <color name="reg_bg">#fff5f5eb</color>
+  <color name="sex_man">#ff6fc6ef</color>
+  <color name="sex_female">#fff979a9</color>
+
+  <!-- tab color -->
+  <color name="maintab_text_normal">#ff666666</color>
+  <color name="maintab_text_selected_color">#FF5B91</color>
+  <color name="subscribe_activity_bg">#ffefefef</color>
+  <color name="subscribe_activity_bg_night">#ff252525</color>
+  <color name="subscribe_bg">#fff5f5f5</color>
+  <color name="subscribe_tip_text">#ff2e2e2e</color>
+  <color name="subscribe_item_text_color_pressed_night">#ff303030</color>
+  <color name="subscribe_item_focused_stroke">#ffd9d9d9</color>
+  <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+  <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+  <color name="subscribe_item_drag_stroke_night">#ff464646</color>
+  <color name="subscribe_item_drag_bg_night">#ff252525</color>
+  <color name="subscribe_item_selected_bg">#ffffffff</color>
+  <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+  <color name="subscribe_item_disabled_bg">#ffefefef</color>
+  <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+  <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+  <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+  <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+  <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+  <color name="subscribe_item_focused_bg_night">#ff252525</color>
+  <color name="subscribe_item_focused_stroke_night">#ff464646</color>
+  <color name="subscribe_item_selected_bg_night">#ff252525</color>
+  <color name="subscribe_item_selected_stroke_night">#ffbc494d</color>
+  <color name="subscribe_item_disabled_bg_night">#ff2b2b2b</color>
+  <color name="subscribe_item_text_color_normal_night">#ff2b2b2b</color>
+  <color name="subscribe_seperate_line">#ffcdcdcd</color>
+  <color name="btn_pressed_gray_green">#ff7791cb</color>
+  <color name="btn_green">#ff5db15a</color>
+  <color name="btn_pressed_green">#ff549f51</color>
+  <color name="btn_gray_green">#ff7791cb</color>
+  <color name="btn_pressed_blue">#ff37528a</color>
+  <color name="btn_blue">#ff3d5b9a</color>
+  <color name="btn_gray">#ffbfbfbf</color>
+  <color name="bg">#ff3b4560</color>
+  <color name="ninety_transparent_white">#1affffff</color>
+  <color name="text_red_hint">#ffed523c</color>
+  <color name="bg_yellow_hint">#fffaedc1</color>
+  <color name="hint">#ff808080</color>
+  <color name="item_pressed">#ffe5e6e7</color>
+  <color name="shadow">#ffe0e0e0</color>
+  <color name="divider">#fff2f2f2</color>
+  <color name="btn_bottom_send_msg_c">#ffc864f0</color>
+  <color name="btn_bottom_send_msg_n">#ffacacab</color>
+  <color name="btn_bottom_send_msg_p">#80c864f0</color>
+
+
+  <!--
+  随心播
+  -->
+  <color name="snow">#FFFAFA</color>
+  <!--雪白色 -->
+  <color name="chocolate">#D2691E</color>
+  <!--巧可力色 -->
+  <color name="aquamarine">#00BCD4</color>
+  <!--碧绿色   #00CAC3 -->
+
+  <color name="mygray">#868686</color>
+
+  <color name="whitesmoke">#F5F5F5</color>
+  <!--烟白色 -->
+  <color name="topbar_color">#ffd84741</color>
+  <!-- 自定义 -->
+  <color name="btn">#CDDC39</color>
+  <color name="skin_input">#000000</color>
+  <color name="chat_input_shadow_color">#C8C9CA</color>
+  <color name="common_pressed">#770000</color>
+  <color name="common_normal">#ffd84741</color>
+  <color name="labelbg">#ffc0c0c0</color>
+
+  <color name="headbg">#ffc0744f</color>
+  <color name="half_transparent">#50000000</color>
+  <color name="full_transparent">#00000000</color>
+
+
+  <color name="line_color">#dedede</color>
+  <color name="label_text_color">#000000</color>
+  <color name="input_text_color">#777777</color>
+  <color name="main_theme_color">#ff8c322c</color>
+  <color name="indicators_color">#dc3839</color>
+  <color name="main_gray">#777777</color>
+  <color name="layout_click_color">#efefef</color>
+
+  <drawable name="normal">#ffffff</drawable>
+  <drawable name="pressed">#efefef</drawable>
+  <color name="dialog_btn_pressed_color">#efefef</color>
+
+  <color name="room_chat_send_bg">#ff63dac3</color>
+  <color name="room_chat_send_bg_p">#ff509a91</color>
+  <color name="room_edittext_bg">#bbffffff</color>
+  <color name="room_edittext_bg_stroke">#aaaaaaaa</color>
+  <color name="hall_live_item_shader">#ff4d4d4d</color>
+  <color name="room_usernum_bg_solid">#1f000000</color>
+  <color name="room_usernum_bg_stroke">#ffffffff</color>
+  <color name="transparent_color">#00000000</color>
+
+
+  <color name="room_gift_page_item_experience">#ff9e9e9e</color>
+  <color name="room_gift_page_item_line">#ff4a4a4a</color>
+  <color name="room_gift_account_balance">#ff909090</color>
+  <color name="room_gift_send_btn">#ffababab</color>
+  <color name="room_gift_bg">#99000000</color>
+  <color name="chargeinfor_balance">#ff80ccc3</color>
+  <color name="theme_main_2">#ff8ee2d3</color>
+
+  <color name="room_share_pop_pressed">#ff6e6e6e</color>
+  <color name="room_userinfo_nick">#ff444444</color>
+  <color name="dialog_item_bg">#fff0f0f0</color>
+  <color name="dialog_item_text">#ff1f1f1f</color>
+  <color name="dialog_setting_bg">#ffd3d5dc</color>
+  <color name="cell_userlist_username">#ff444444</color>
+  <color name="cell_userlist_tip">#ffaaaaaa</color>
+
+  <color name="dm_red">#fff34f84</color>
+  <color name="room_userfans">#ffa58ee2</color>
+  <color name="room_userdialog_line_bg">#ffeef3f4</color>
+  <color name="userlist_divider">#ffebebeb</color>
+  <color name="userfan_followed">#ffaaaaaa</color>
+  <color name="room_btn_follow">#ffaaaaaa</color>
+
+  <color name="room_head_stroke_bg">#ffa58ee2</color>
+  <color name="divider_line">#33000000</color>
+  <color name="global_titlebar_background">#ff8ee2d3</color>
+  <color name="room_userinfo_dialog_oper_line">#ffd8d8d8</color>
+  <color name="room_gift_text_shadow">#ff99cc00</color>
+  <color name="continue_gift_bg">#57000000</color>
+  <color name="continue_gift_desc">#ffffff66</color>
+  <color name="continue_gift_x_color">#ff33cccc</color>
+
+  <color name="cell_public_chat_usernick">#ffffff00</color>
+  <color name="cell_public_chat_content">#ffffffff</color>
+  <color name="cell_public_chat_gift">#ffe86d82</color>
+  <color name="cell_public_chat_shader">#7f333333</color>
+
+  <color name="room_red_packet_bg">#ff9f4336</color>
+  <color name="room_red_packet_tip">#ffffa7a7</color>
+  <color name="room_red_packet_head_bg">#ffb64c3c</color>
+  <color name="room_red_packet_bottom_bg">#ff8d2d1f</color>
+  <color name="room_red_packet_error_tip">#ffca5544</color>
+  <color name="room_red_packet_top_topline">#ffb1b0b0</color>
+  <color name="room_red_packet_top_bg">#fff7f7f7</color>
+  <color name="room_red_packet_top_bottomline">#ffd6d6d6</color>
+  <color name="room_red_packet_top_text">#ff1d1d1d</color>
+  <color name="room_red_packet_top_gainer">#ffffae00</color>
+
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+
+  <color name="userhome_head_info_line">#ffedede8</color>
+  <color name="userhome_head_oper_text">#ffe76d81</color>
+  <color name="userhome_head_oper_line">#ffdcdcdc</color>
+  <color name="bg_pressed">#19000000</color>
+  <color name="userhome_head_other_oper_text">#ffa1a1a1</color>
+  <color name="global_background">#fff0f7f6</color>
+  <color name="userhome_head_other_oper_line_bottom">#ffdbdedd</color>
+  <color name="global_cell_background">#ffffffff</color>
+  <color name="global_cell_pressed">#ffededed</color>
+  <color name="global_text_left_cell">#ff292f33</color>
+  <color name="userinfo_cell_righttext">#ff80ccc5</color>
+  <color name="global_black">#ff000000</color>
+  <color name="line_setting">#ffd2d2d2</color>
+  <color name="userhome_btn_logout">#ff444444</color>
+  <color name="live_finish_bg">#ab000000</color>
+  <color name="room_gold_count_bg">#4d000000</color>
+  <color name="chargeinfor_points">#ff8de3d3</color>
+  <color name="chargeinfor_lefttext">#ff818181</color>
+
+  <color name="live_record_seekbar_bg">#ffffffff</color>
+  <color name="live_record_seekbar_progress">#ffE40A0A</color>
+  <color name="live_record_error_bg">#33E40A0A</color>
+
+  <color name="buy_diamond_selected">#FF9497</color>
+  <color name="buy_diamond_bg">#F5F4F5</color>
+
+
+  <!--<color name="button_normal">#E70010</color>-->
+  <!--<color name="button_pressed">#BC0010</color>-->
+
+
+
+ <color name="button_normal">#ff9900</color>
+  <color name="button_pressed">#d78812</color>
+
+</resources>

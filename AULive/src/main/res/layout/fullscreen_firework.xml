@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/room_full_screen_gift_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <RelativeLayout
+      android:id="@+id/firework_ly"
+      android:layout_width="450dp"
+      android:layout_marginBottom="170dp"
+      android:layout_height="match_parent"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+      android:visibility="gone"
+      >
+
+    <ImageView
+        android:id="@+id/start_firework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:id="@+id/firework1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="100dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:src="@drawable/fireworks_flower1"
+        />
+    <ImageView
+        android:id="@+id/firework2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+        android:src="@drawable/fireworks_flower2"
+        />
+
+    <ImageView
+        android:id="@+id/firework3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="120dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:src="@drawable/fireworks_flower3"
+        />
+    <ImageView
+        android:id="@+id/firework4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="110dp"
+        android:visibility="gone"
+        android:src="@drawable/fireworks_flower4"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+      <ImageView
+          android:id="@+id/car_one_redpoint"
+          android:layout_width="12.0dip"
+          android:layout_height="12.0dip"
+          android:layout_gravity="center_vertical"
+          android:scaleType="fitCenter"
+          android:src="@drawable/gift_common_redpoint"
+          />
+
+      <TextView
+          android:id="@+id/room_gift_car_one_send_person"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:ellipsize="middle"
+          android:gravity="center_vertical"
+          android:shadowColor="@color/room_gift_text_shadow"
+          android:shadowDx="2.0"
+          android:shadowDy="2.0"
+          android:shadowRadius="1.0"
+          android:singleLine="true"
+          android:text="big赠"
+          android:textColor="@android:color/white"
+          android:textSize="16.0sp"
+          />
+    </LinearLayout>
+  </RelativeLayout>
+</RelativeLayout>

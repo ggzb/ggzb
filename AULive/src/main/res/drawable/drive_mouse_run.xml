@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mouse_run_anim"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/drive_mouse_run00"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_run01"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_run02"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_run03"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_run04"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_run05"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_run06"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_run07"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/drive_mouse_run08"
+        android:duration="40"/>
+
+    <item
+        android:drawable="@drawable/drive_mouse_run09"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/drive_mouse_run10"
+        android:duration="40"/>
+</animation-list>

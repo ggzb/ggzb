@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tab_item_find_tv_label"
+        style="@style/Style.TabItem.Label"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:drawableTop="@drawable/ic_tab_site"
+        android:gravity="center_horizontal|bottom"
+        android:text="消息" />
+
+    <TextView
+        android:id="@+id/tab_unread_bg_find"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/tab_item_find_tv_label"
+        android:layout_marginRight="-15.0dip"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tab_unread_bg"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tabitem_prifile_iv_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/msg_new_total"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

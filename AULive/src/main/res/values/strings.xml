@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_helper_classname">com.hrbhzkj.xinxiu.dbhelper.DatabaseHelper</string>
+    <!-- channel -->
+    <string name="MARKET_Umeng">Umeng</string>
+    <string name="MARKET_QQ">myapp</string>
+    <string name="MARKET_360">c360</string>
+    <string name="MARKET_WANDOUJIA">wandoujia</string>
+    <string name="MARKET_BAIDU">baidu</string>
+    <string name="MARKET_YINGYONGHUI">yingyonghui</string>
+    <string name="MARKET_XIAOMI">xiaomi</string>
+    <string name="MARKET_OTHER">other</string>
+    <string name="MARKET_TUIGUANG">tuiguang</string>
+    <string name="MARKET_HUAWEI">huawei_adv</string>
+    <string name="MARKET_oppo">oppo</string>
+    <string name="MARKET_jifeng">jifeng</string>
+    <string name="MARKET_huangse">huangse</string>
+    <string name="MARKET_vivo">vivo</string>
+    <string name="MARKET_meizu">meizu</string>
+    <string name="MARKET_jinli">jinli</string>
+
+    <!-- end channel -->
+    <!-- -映客夜夜在直播 -->
+    <string name="app_name">西米</string>
+    <string name="app_money">魅力</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="prompt">提示</string>
+    <string name="net_error">连接失败，请检查您的网络！</string>
+    <string name="get_info_fail">连接失败，请检查您的网络！</string>
+    <string name="loding_data">正在加载，请稍候...</string>
+
+    <!-- title -->
+    <string name="pay_content_str">你想充值人民币，<Data><![CDATA[ <b><font color="#EE4000">￥%1$s</font></b> ]]></Data>元</string>
+    <string name="tixian_content_str">你想提现人民币，<Data><![CDATA[ <b><font color="#EE4000">￥%1$s</font></b> ]]></Data>元</string>
+
+    <!-- 邀请 -->
+    <string name="invite_code_str">邀请码 ：%1$s</string>
+    <string name="invidate_code_head_prompt">请输入邀请码完成验证：</string>
+    <string name="invite_hint_prompt">请输入邀请码</string>
+    <string name="invidate_btn_text">验证</string>
+    <string name="invidate_prompt">说明：\n&#160;&#160;&#160;&#160;你可以在收到的短信或微信中找到邀请码，完成验证码即可</string>
+    <string name="outofmemory_str">手机内存不足，请重试！</string>
+
+    <!-- 分享 -->
+    <string name="weixin_str">微信</string>
+    <string name="weixin_friend_str">朋友圈</string>
+    <string name="qq_share_str">QQ</string>
+    <string name="qqzone_share_str">QQ空间</string>
+    <string name="sms_share_str">短信</string>
+    <string name="sina_share_str">新浪微博</string>
+    <string name="share_weixin_friend_prompt">微信4.2以上才可以分享到朋友圈，当前微信版本过低</string>
+    <string name="no_install_weixin">请安装微信客户端</string>
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_share_success">分享成功</string>
+    <string name="weibosdk_share_failed">分享失败</string>
+    <string name="weibosdk_share_canceled">取消分享</string>
+    <string name="share_credit_increase">诚信度 +%1$s</string>
+    <string name="share_title_prompt">每天分享增加诚信度(最高:%1$s)</string>
+    <string name="subscribe_my_category">我的技能</string>
+    <string name="subscribe_more_category">更多技能</string>
+    <string name="subscribe_manager_category_info">单击增删技能</string>
+    <string name="subscribe_manager_category_info_2">单击增删技能，长按拖拽排序</string>
+
+    <!-- voice -->
+    <string name="chat_press_voice">按住说话</string>
+    <string name="chat_audio_send">松开发送</string>
+    <string name="chat_audio_send_cancel">松开取消</string>
+    <string name="chat_audio_cancel">滑动至此取消</string>
+
+    <!-- PayActivity -->
+    <string name="pay_by_wx_title">通过微信支付</string>
+    <string name="pay_by_wx">通过微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+    <string name="input_reqkey">输入reqkey</string>
+    <string name="input_package_value">输入package value</string>
+    <string name="input_sign">输入sign</string>
+    <string name="getting_access_token">正在获取access token...</string>
+    <string name="get_access_token_succ">获取access token成功</string>
+    <string name="get_access_token_fail" formatted="false">获取access token失败，原因%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="paying">支付中</string>
+    <string name="get_prepayid_succ">获取prepayid成功</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+    <string name="unifiedorder_v3_wx">APP支付生成预支付订单</string>
+    <string name="pay__pre_by_wxap">生成APP微信支付参数</string>
+    <string name="pay_by_wxap">调起微信支付</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+
+    <string name="drawer_open">打开搜索</string>
+    <string name="drawer_close">关闭搜索</string>
+    <string name="data_error">数据异常,请重试</string>
+
+
+    <!--    -->
+    <string name="live_title_hint">取个好名字更加吸引人哦...</string>
+    <string name="live_cover_hint">封面图片</string>
+    <string name="content_desc">这是直播封面</string>
+    <string name="show_btn_txt">立即直播</string>
+
+
+    <string name="formal_environment">正式环境</string>
+    <string name="test_environment">测试环境</string>
+    <string name="login_error_login_failed">用户帐号或密码错误</string>
+    <string name="login_error_empty_input">帐号或密码不能为空</string>
+    <string name="login_net_error">网络链接错误</string>
+    <string name="login_sms_password_empty">验证码输入为空</string>
+    <string name="btn_get_sms_password">获取验证码</string>
+
+
+    <string name="handfree_summary">开关扬声器</string>
+    <string name="video_handfree">免提</string>
+    <string name="mic_summary">开关麦克风</string>
+    <string name="mic">麦克风</string>
+    <string name="camera_summary">开关摄像头</string>
+    <string name="video_camera_txt">摄像头</string>
+    <string name="video_switch_camera">切换摄像头</string>
+
+
+    <string name="error_code_prefix">错误码：</string>
+    <string name="interface_initialization">界面初始化中</string>
+    <string name="at_login">登录中</string>
+    <string name="login_failed">登录失败</string>
+    <string name="at_logout">登出中</string>
+    <string name="at_on_camera">打开摄像头中</string>
+    <string name="on_camera_failed">打开摄像头失败</string>
+    <string name="at_off_camera">关闭摄像头中</string>
+    <string name="off_camera_failed">关闭摄像头失败</string>
+    <string name="at_switch_front_camera">换用前置摄像头中</string>
+    <string name="switch_front_camera_failed">换用前置摄像头失败</string>
+    <string name="at_switch_back_camera">换用后置摄像头中</string>
+    <string name="switch_back_camera_failed">换用后置摄像头失败</string>
+    <string name="at_close_room">关闭房间中</string>
+    <string name="notify_network_timeout">超时异常</string>
+    <string name="notify_network_error">网络无法联通，请检查网络</string>
+    <string name="notify_no_network">网络无连接，请检查网络</string>
+
+    <string name="userhome_account_inout">送出:%1$s</string>
+    <string name="userhome_account_inout_default">送出0</string>
+
+    <string name="userinfo_verify">认证：%1$s</string>
+    <string name="userinfo_follows">关注：%1$s</string>
+    <string name="userinfo_out_gold">送出：%1$s</string>
+    <string name="userinfo_fans">粉丝：%1$s</string>
+    <string name="userinfo_gain">魅力：%1$s</string>
+
+    <string name="userhome_followers_prefix">关注:</string>
+    <string name="userhome_fans_prefix">粉丝:</string>
+    <string name="userhome_lives_prefix">直播</string>
+    <string name="userhome_searchfriend_hint">请输入好友昵称/ID</string>
+    <string name="userhome_search">搜索</string>
+    <string name="userhome_add_attention">关注</string>
+    <string name="userhome_room_reply">回复</string>
+    <string name="userhome_private_chat">私信</string>
+    <string name="userhome_goto_home">主页</string>
+    <string name="userhome_follow_to_getnotice">关注Ta获得直播提醒</string>
+    <string name="userhome_nickname_default">Garf</string>
+    <string name="userhome_fans">粉丝</string>
+    <string name="userhome_account_goldcoin">魅力:</string>
+
+
+    <string name="room_redpacket_too_slow">手太慢，已发完</string>
+    <string name="room_redpacket_others_luck">看看大家的手气</string>
+    <string name="room_live_badnet">网太挫，恢复ing</string>
+    <string name="room_live_neterror">网络连接中断，请检查网络</string>
+    <string name="room_live_forbidchat">您暂时不能发言</string>
+    <string name="room_live_pausechat">为了保证流畅，暂时不能发言哦</string>
+    <string name="room_live_chattoofast">发言不要太频繁哦</string>
+    <string name="room_live_forbidlike">为了保证流畅，暂时关闭点赞功能</string>
+    <string name="room_live_forbidgift">为了保证流畅，暂时不能送礼哦</string>
+    <string name="room_live_sendgifttoofast">送礼不要太频繁哦</string>
+    <string name="room_live_dropgifteffect">为了保证流畅，礼物效果暂时关闭哦</string>
+    <string name="room_live_giftneedlevel">等级高于xx级才能送礼哦</string>
+    <string name="room_roomuser_forbidchat">禁言</string>
+    <string name="room_roomuser_setmanage">设为管理</string>
+    <string name="room_be_sendmanager">您已经被设置为管理员</string>
+    <string name="room_be_cancelmanager">您被取消管理员资格</string>
+    <string name="room_roomuser_setmanage_success">设置为管理成功</string>
+    <string name="room_roomuser_setmanage_out">管理员超出限制</string>
+    <string name="room_roomuser_cancalmanage">取消管理</string>
+    <string name="room_roomuser_delmanage">删除管理</string>
+    <string name="room_roomuser_bemanager">您已被设置成为管理员</string>
+    <string name="room_roomuser_unmanager">您已被取消管理员资格</string>
+    <string name="room_roomuser_delmanage_success">删除管理员成功</string>
+    <string name="room_roomuser_managelist">管理员列表</string>
+    <string name="room_roomuser_manager">管理员</string>
+    <string name="room_roomuser_manage">管理</string>
+    <string name="room_longclick_delete">长按可删除管理员</string>
+    <string name="room_roomuser_forbidchat_success">禁言成功</string>
+    <string name="room_roomuser_report">举报</string>
+
+    <string name="userhome_fans_num_default">粉丝</string>
+    <string name="userhome_lives_num_default">直播</string>
+    <string name="userhome_follows_num_default">关注</string>
+    <string name="room_contributor_contribution">贡献%1$d魅力</string>
+    <string name="room_contributor_rank">NO.%1$d</string>
+
+
+    <string name="newUpdateAvailable">发现新版本</string>
+    <string name="dialogPositiveButton">立即下载</string>
+    <string name="dialogNegativeButton">以后再说</string>
+    <string name="app_no_new_update">没有发现新版本</string>
+    <string name="download_progress">正在下载:%1$d%%</string>
+    <string name="download_success">下载完成，点击安装</string>
+
+    <string name="live_enterpay">您將觀看付費直播,費用10鉆石/分鐘</string>
+    <string name="live_pay2free">直播已改為免費,請繼續觀看</string>
+    <string name="live_free2pay">直播已改為付費,是否繼續觀看,10鉆石/分鐘</string>
+
+    <string name="news_system">系統消息</string>
+    <string name="system_busy">系統繁忙,請稍後再試</string>
+    <string name="net_fail">獲取網絡數據失敗</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

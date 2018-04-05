@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+<gradient
+    android:startColor="@color/global_main_bg"
+    android:endColor="#77E40A0A"
+    android:angle="90"
+      />
+  <!--<gradient-->
+      <!--android:angle="270"-->
+      <!--android:centerColor="#00FFFF"-->
+      <!--android:centerX="0.5"-->
+      <!--android:centerY="0.5"-->
+      <!--android:endColor="#666666"-->
+      <!--android:startColor="#0099FF" />-->
+  <padding
+      android:bottom="5dp"
+      android:left="5dp"
+      android:right="5dp"
+      android:top="5dp" />
+
+  <!--<corners android:radius="4dp" />-->
+  <!--（1）shape节点配置的是图形的形式，主要包括方形、圆形等，上边代码为方形。-->
+
+  <!--（2）gradient节点主要配置起点颜色、终点颜色及中间点的颜色、坐标、渐变效果（0，90，180从左到右渐变，270从上到下渐变）默认从左到右。-->
+
+  <!--（3）corners节点配置四周圆角的半径。-->
+</shape>

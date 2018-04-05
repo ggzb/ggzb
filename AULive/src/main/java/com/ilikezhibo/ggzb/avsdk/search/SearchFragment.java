@@ -1,0 +1,360 @@
+package com.ilikezhibo.ggzb.avsdk.search;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.jack.lib.AppException;
+import com.jack.lib.net.RequestInformation;
+import com.jack.lib.net.callback.JsonCallback;
+import com.jack.utils.Trace;
+import com.jack.utils.UrlHelper;
+import com.jack.utils.Utils;
+import com.ilikezhibo.ggzb.BaseEntity;
+import com.ilikezhibo.ggzb.BaseFragment;
+import com.ilikezhibo.ggzb.R;
+import com.ilikezhibo.ggzb.avsdk.userinfo.homepage.HomePageActivity;
+import com.ilikezhibo.ggzb.avsdk.userinfo.toprank.TopRankEntity;
+import com.ilikezhibo.ggzb.login.LoginActivity;
+import com.ilikezhibo.ggzb.pull.widget.PullToRefreshView;
+import com.ilikezhibo.ggzb.views.CustomDialog;
+import com.ilikezhibo.ggzb.views.CustomDialogListener;
+import com.ilikezhibo.ggzb.views.CustomProgressDialog;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+
+/**
+ * @author big
+ * @ClassName: BlackListFragment
+ * @Description:关注排行
+ * @date 2014-3-19 下午9:49:31
+ */
+
+@SuppressLint("ValidFragment") public class SearchFragment extends BaseFragment
+    implements OnClickListener, PullToRefreshView.OnRefreshListener, OnItemClickListener,
+    OnItemLongClickListener {
+
+   private View root_view;
+   private CustomProgressDialog progressDialog = null;
+   private PullToRefreshView home_listview;
+   private int currPage = 1;
+   private TextView msgInfoTv;
+   private ArrayList<UserInfoDialogEntity> entities;
+   private DialgoListAdapter groupFragmentAdapter;
+
+   //search相关
+   private ImageView city_close;
+   private EditText tv_serach;
+   private String search_key = "";
+
+   public SearchFragment() {
+   }
+
+   @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
+       Bundle savedInstanceState) {
+      root_view = inflater.inflate(R.layout.fragment_search_layout, null);
+
+      msgInfoTv = (TextView) root_view.findViewById(R.id.msgInfoTv);
+      msgInfoTv.setOnClickListener(this);
+
+      TextView title = (TextView) root_view.findViewById(R.id.title);
+      title.setText("搜索");
+
+      //返回可见
+      root_view.findViewById(R.id.topLayout).setVisibility(View.VISIBLE);
+
+      root_view.findViewById(R.id.topRightBtn).setOnClickListener(new OnClickListener() {
+         @Override public void onClick(View view) {
+            home_listview.initRefresh(PullToRefreshView.HEADER);
+         }
+      });
+
+      Button rl_back = (Button) root_view.findViewById(R.id.back);
+      rl_back.setOnClickListener(this);
+      rl_back.setVisibility(View.VISIBLE);
+
+      entities = new ArrayList<UserInfoDialogEntity>();
+
+      home_listview = (PullToRefreshView) root_view.findViewById(R.id.pull_to_refresh_listview);
+      home_listview.setOnRefreshListener(this);
+      home_listview.setOnItemClickListener(this);
+      home_listview.setOnItemLongClickListener(this);
+
+      groupFragmentAdapter = new DialgoListAdapter(this.getActivity());
+      home_listview.setAdapter(groupFragmentAdapter);
+      groupFragmentAdapter.setEntities(entities);
+
+      //View header =
+      //    LayoutInflater.from(this.getContext()).inflate(R.layout.gift_contributor_header, null);
+      //TextView txt_total_coin = (TextView) header.findViewById(R.id.txt_total_coin);
+      //txt_total_coin.setText(AULiveApplication.getUserInfo().recv_diamond + "");
+      //home_listview.addHeaderView(header);
+
+      initSearch();
+
+      return root_view;
+   }
+
+   private void initSearch() {
+      city_close = (ImageView) root_view.findViewById(R.id.city_close);
+      city_close.setOnClickListener(new OnClickListener() {
+         @Override public void onClick(View view) {
+            tv_serach.setText("");
+            city_close.setVisibility(View.GONE);
+         }
+      });
+
+      tv_serach = (EditText) root_view.findViewById(R.id.tv_serach);
+      tv_serach.clearFocus();
+      tv_serach.addTextChangedListener(new TextWatcher() {
+
+         @Override
+         public void onTextChanged(final CharSequence s, final int start, final int before,
+             final int count) {
+
+         }
+
+         @Override
+         public void beforeTextChanged(final CharSequence s, final int start, final int count,
+             final int after) {
+         }
+
+         @Override public void afterTextChanged(Editable editable) {
+            search_key = editable + "";
+            // 开始获取数据
+
+            if (editable.length() > 0) {
+               city_close.setVisibility(View.VISIBLE);
+            } else {
+               city_close.setVisibility(View.GONE);
+            }
+         }
+      });
+   }
+
+   @Override public void onResume() {
+      super.onResume();
+   }
+
+   @Override public void onClick(View v) {
+      switch (v.getId()) {
+         case R.id.search_bt:
+
+            break;
+         case R.id.righ_bt:
+
+            break;
+         case R.id.back:
+            this.getActivity().finish();
+            break;
+         case R.id.msgInfoTv:
+            Intent login_intent =
+                new Intent(SearchFragment.this.getActivity(), LoginActivity.class);
+            startActivity(login_intent);
+            break;
+      }
+   }
+
+   @Override public void onDetach() {
+      super.onDetach();
+   }
+
+   @Override public void onDestroy() {
+      super.onDestroy();
+   }
+
+   @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+      UserInfoDialogEntity entity = (UserInfoDialogEntity) parent.getAdapter().getItem(position);
+
+      Intent homepage_Intent =
+          new Intent(SearchFragment.this.getActivity(), HomePageActivity.class);
+      homepage_Intent.putExtra(HomePageActivity.HOMEPAGE_UID, entity.getUid());
+      SearchFragment.this.getActivity().startActivity(homepage_Intent);
+   }
+
+   @Override public void onRefresh(final int mode) {
+
+      if (search_key == null | search_key.equals("")) {
+         Utils.showCroutonText(SearchFragment.this.getActivity(), "请输入关键字");
+         return;
+      }
+      startProgressDialog();
+      currPage = mode == PullToRefreshView.HEADER ? 1 : ++currPage;
+      RequestInformation request = null;
+
+      try {
+         StringBuilder sb = new StringBuilder(
+             UrlHelper.SEARCH_USER + "?page=" + currPage + "&word=" + URLEncoder.encode(search_key,
+                 "utf-8"));
+         Trace.d(sb.toString());
+         request = new RequestInformation(sb.toString(), RequestInformation.REQUEST_METHOD_GET);
+      } catch (UnsupportedEncodingException e) {
+
+      }
+      request.setCallback(new JsonCallback<UserInfoDialogListEntity>() {
+
+         @Override public void onCallback(UserInfoDialogListEntity callback) {
+            stopProgressDialog();
+            if (callback == null) {
+               currPage--;
+               msgInfoTv.setText(R.string.get_info_fail);
+               msgInfoTv.setVisibility(View.VISIBLE);
+               home_listview.setVisibility(View.VISIBLE);
+               home_listview.onRefreshComplete(mode, false);
+               home_listview.enableFooter(false);
+
+               return;
+            }
+
+            if (callback.getStat() == 200) {
+               msgInfoTv.setVisibility(View.GONE);
+               if (mode == PullToRefreshView.HEADER) {
+                  entities.clear();
+               }
+
+               if (callback.getList() != null) {
+                  entities.addAll(callback.getList());
+               }
+
+               groupFragmentAdapter.setEntities(entities);
+               groupFragmentAdapter.notifyDataSetChanged();
+               home_listview.onRefreshComplete(mode, true);
+
+               if (mode == PullToRefreshView.HEADER || (callback.getList() != null
+                   && callback.getList().size() > 0)) {
+                  home_listview.enableFooter(true);
+               } else {
+                  home_listview.enableFooter(false);
+               }
+
+               //显示内容为空
+               if (mode == PullToRefreshView.HEADER && (callback.getList() == null
+                   || callback.getList().size() == 0)) {
+                  root_view.findViewById(R.id.ll_fav_nocontent).setVisibility(View.VISIBLE);
+                  home_listview.setVisibility(View.GONE);
+               } else {
+                  root_view.findViewById(R.id.ll_fav_nocontent).setVisibility(View.GONE);
+                  home_listview.setVisibility(View.VISIBLE);
+               }
+            } else {
+               if (callback.getStat() == 500 && has_ask_login == false) {
+                  has_ask_login = true;
+                  Intent login_intent =
+                      new Intent(SearchFragment.this.getActivity(), LoginActivity.class);
+                  startActivity(login_intent);
+               }
+               stopProgressDialog();
+               currPage--;
+               msgInfoTv.setText(callback.getMsg());
+               msgInfoTv.setVisibility(View.VISIBLE);
+               // 因为可能网络恢复，success改为true
+               home_listview.onRefreshComplete(mode, false);
+               home_listview.enableFooter(false);
+            }
+         }
+
+         @Override public void onFailure(AppException e) {
+            stopProgressDialog();
+            currPage--;
+            entities.clear();
+            // 因为可能网络恢复，success改为true
+            home_listview.onRefreshComplete(mode, false);
+            home_listview.enableFooter(false);
+
+            msgInfoTv.setText(R.string.get_info_fail);
+            msgInfoTv.setVisibility(View.VISIBLE);
+         }
+      }.setReturnType(UserInfoDialogListEntity.class));
+
+      request.execute();
+   }
+
+   // 只提示一次登录
+   private boolean has_ask_login = false;
+
+   private void startProgressDialog() {
+      if (progressDialog == null) {
+         progressDialog = CustomProgressDialog.createDialog(this.getActivity());
+         progressDialog.setMessage("正在加载中...");
+      }
+
+      progressDialog.show();
+   }
+
+   private void stopProgressDialog() {
+      if (progressDialog != null) {
+         progressDialog.dismiss();
+         progressDialog = null;
+      }
+   }
+
+   // /删除
+   private void doDelete(final TopRankEntity qiuZuEntity) {
+
+      RequestInformation request =
+          new RequestInformation(com.jack.utils.UrlHelper.URL_HEAD + "/friend/del?user=" + qiuZuEntity.getUid(),
+              RequestInformation.REQUEST_METHOD_GET);
+
+      request.setCallback(new JsonCallback<BaseEntity>() {
+
+         @Override public void onCallback(BaseEntity callback) {
+
+            if (callback == null) {
+               return;
+            }
+            if (callback.getStat() == 200) {
+
+               entities.remove(qiuZuEntity);
+               groupFragmentAdapter.notifyDataSetChanged();
+            } else {
+               Utils.showMessage(callback.getMsg());
+            }
+         }
+
+         @Override public void onFailure(AppException e) {
+            Utils.showMessage("获取网络数据失败");
+         }
+      }.setReturnType(BaseEntity.class));
+      request.execute();
+   }
+
+   private void showPromptDialog(final TopRankEntity qiuZuEntity) {
+      final CustomDialog customDialog =
+          new CustomDialog(SearchFragment.this.getActivity(), new CustomDialogListener() {
+
+             @Override public void onDialogClosed(int closeType) {
+                switch (closeType) {
+                   case CustomDialogListener.BUTTON_POSITIVE:
+                      doDelete(qiuZuEntity);
+                }
+             }
+          });
+
+      customDialog.setCustomMessage("确认要删除此好友吗?");
+      customDialog.setCancelable(true);
+      customDialog.setType(CustomDialog.DOUBLE_BTN);
+      customDialog.show();
+   }
+
+   @Override
+   public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+      //TopRankEntity entity = (TopRankEntity) parent.getAdapter().getItem(position);
+      //showPromptDialog(entity);
+      return true;
+   }
+}

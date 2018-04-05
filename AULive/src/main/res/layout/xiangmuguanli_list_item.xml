@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/review_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_solid" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/avatar_layout"
+            android:layout_width="32.0dip"
+            android:layout_height="28.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="15.0dip" >
+
+            <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+                android:id="@+id/iv_face"
+                android:layout_width="29.0dip"
+                android:layout_height="29.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/loading" />
+
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="15"
+                android:textColor="@color/white"
+                android:textSize="9.0sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/tvAccountMedalReviewItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="14.0dip"
+            android:layout_toLeftOf="@+id/money_tv"
+            android:layout_toRightOf="@id/avatar_layout"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/relativeNickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLength="9"
+                        android:text="昵称"
+                        android:textColor="#ff595857"
+                        android:textSize="14.0sp" />
+
+                    <ImageView
+                        android:id="@+id/forum_review_item_landlord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4.0dip"
+                        android:src="@drawable/icon_check"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/relativeNickName"
+                    android:orientation="horizontal"
+                    android:paddingTop="2.0dip" >
+
+                    <TextView
+                        android:id="@+id/tv_lousu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1楼"
+                        android:textColor="#ffc0c6c9"
+                        android:textSize="9.0sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1天前"
+                        android:textColor="#ffc0c6c9"
+                        android:textSize="9.0sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/private_operate_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15.0dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14.0dip"
+                android:layout_marginRight="14.0dip"
+                android:paddingTop="9.0dip"
+                android:text="回复内容"
+                android:textColor="#ff383c3c"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/sure_baoming"
+            android:text=""
+            android:textColor="@color/global_main_bg"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/sure_baoming"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="接受报名"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/faxiangmu_comment"
+            layout="@layout/xiangmuguanli_comment_item" 
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/jishuren_comment"
+            layout="@layout/xiangmuguanli_comment_item" 
+             android:visibility="gone"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_solid"
+        android:visibility="gone" />
+
+</LinearLayout>

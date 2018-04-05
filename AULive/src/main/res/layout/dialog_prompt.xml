@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="260dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_titile"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/dialog_jing_gao" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            android:paddingTop="4dp"
+            android:paddingBottom="7dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="8dp"
+        android:minHeight="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/msgTv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_tooltip"
+            android:singleLine="true"
+            android:layout_marginTop="15dp"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/cb_accept"
+            android:visibility="gone"
+            android:button="@null"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/checkbox_1v1_selector"
+            android:drawablePadding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/dialog_style"
+        android:gravity="center"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:id="@+id/button_yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_btn_style_left"
+            android:text="确 定"
+            android:textColor="@color/global_main_bg"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/dialog_view"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/global_main_bg"
+            />
+
+        <Button
+            android:id="@+id/button_no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_btn_style_right"
+            android:text="取 消"
+            android:textColor="@color/main_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

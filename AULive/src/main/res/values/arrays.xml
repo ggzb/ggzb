@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+=u0	<string-array name="constellation">
+        <item>请选择星座</item>
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </string-array>
+    <string-array name="sex">
+        <item>请选择性别</item>
+        <item>女性</item>
+        <item>男性</item>
+    </string-array>
+
+	 <string-array name="qq_list">
+    </string-array>
+    <string-array name="openid_list">
+    </string-array>
+    <string-array name="openkey_list">
+    </string-array>
+
+  <declare-styleable name="HeartLayout">
+    <attr name="initX" format="dimension" />
+    <attr name="initY" format="dimension" />
+    <attr name="xRand" format="dimension" />
+    <attr name="animLengthRand" format="dimension" />
+    <attr name="xPointFactor" format="dimension" />
+    <attr name="animLength" format="dimension" />
+    <attr name="heart_width" format="dimension" />
+    <attr name="heart_height" format="dimension" />
+    <attr name="bezierFactor" format="integer" />
+    <attr name="anim_duration" format="integer" />
+  </declare-styleable>
+</resources>

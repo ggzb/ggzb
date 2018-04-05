@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/room_drive_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/drive_run_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="632dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_marginBottom="370dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/drive_one_redpoint"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gift_common_redpoint" />
+
+            <TextView
+                android:id="@+id/nicknameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/room_gift_text_shadow"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:text="JACK"
+                android:textColor="@color/global_main_bg"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/drive_content_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="170.0dip">
+
+            <ImageView
+                android:id="@+id/run_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/drive_pig_run" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/drive_light_img"
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:src="@drawable/drive_light"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

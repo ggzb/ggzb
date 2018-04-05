@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="306dp"
+    android:layout_height="400dp"
+    >
+  <RelativeLayout
+      style="@style/redpacket_container"
+      >
+    <LinearLayout
+        android:id="@+id/redpacket_info_container"
+        android:layout_width="306dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_room_red_packet_head"
+        android:paddingBottom="80.0dip"
+        style="@style/redpacket_info_container"
+        >
+      <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+          android:id="@+id/user_portrait"
+          android:layout_width="65.0dip"
+          android:layout_height="65.0dip"
+          android:layout_marginTop="60.0dip"
+          android:src="@drawable/default_head"
+
+          />
+      <TextView
+          android:id="@+id/txt_username"
+          android:layout_marginTop="6.0dip"
+          android:text=""
+          android:textColor="@color/white"
+          style="@style/redpacket_tip_text"
+          />
+      <TextView
+          android:id="@+id/txt_redpacket_tip"
+          android:layout_marginTop="3.0dip"
+          android:text="给您发来一个红包"
+          android:textColor="@color/room_red_packet_tip"
+          style="@style/redpacket_tip_text"
+          />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_open"
+        android:layout_below="@id/redpacket_info_container"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gift_qiang"
+        android:visibility="visible"
+        style="@style/redpacket_img_open"
+        />
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        android:layout_below="@id/redpacket_info_container"
+        android:visibility="gone"
+        style="@style/redpacket_loading"
+        />
+    <LinearLayout style="@style/redpacket_close_container">
+      <ImageView
+          android:id="@+id/img_close"
+          android:contentDescription="@string/app_name"
+          style="@style/redpacket_close_img"
+          />
+    </LinearLayout>
+  </RelativeLayout>
+</LinearLayout>

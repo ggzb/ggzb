@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/jiesihuo_title"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/app_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <!--<TextView-->
+                <!--android:id="@+id/website"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="20.0dip"-->
+                <!--android:autoLink="web"-->
+                <!--android:gravity="center"-->
+                <!--android:text="官网: www.xxx.com"-->
+                <!--android:textColor="#ffdddddd"-->
+                <!--android:textColorLink="#ffdddddd"-->
+                <!--android:textSize="16sp" />-->
+
+          <!--  <TextView
+                android:id="@+id/tv_wx_biz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="微信公众号: "
+                android:textColor="#ffdddddd"
+                android:textColorLink="#ffdddddd"
+                android:textSize="16sp" />-->
+
+            <TextView
+                android:id="@+id/contract_privacy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:textColor="#ffdddddd"
+                android:textColorLink="#ffdddddd"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30.0dip"
+                android:gravity="center"
+                android:text=" @版权所有"
+                android:textColor="#ffdddddd"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

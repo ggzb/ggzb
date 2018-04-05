@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sendtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#bfbfbf"
+            android:padding="2dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <com.ilikezhibo.ggzb.msg.customview.RoundImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false" />
+
+        <RelativeLayout
+            android:id="@+id/chattingLocationLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:background="@drawable/chatto_bg" >
+
+            <com.ilikezhibo.ggzb.msg.customview.RoundImageView
+                android:id="@+id/locationImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/locationAdressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationImg"
+                android:layout_marginTop="5dp"
+                android:gravity="right|center"
+                android:lineSpacingExtra="2dp"
+                android:maxWidth="160dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/downMapProgress"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/pull_ref_pb"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sendFailLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/chattingLocationLayout"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:minWidth="24dp" >
+
+            <ImageView
+                android:id="@+id/sendFailImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/chat_room_send_fail_bg" />
+
+            <TextView
+                android:id="@+id/readStateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#ffd93a49"
+                android:textSize="10sp" />
+
+            <ProgressBar
+                android:id="@+id/sendingProgress"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_marginRight="8.0dip"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/pull_ref_pb" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

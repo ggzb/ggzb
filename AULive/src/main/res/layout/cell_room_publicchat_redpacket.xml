@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/room_publicchat_container"
+    >
+  <TextView
+      android:id="@+id/txt_chat_content"
+      style="@style/room_publicchat_text"
+      />
+  <ImageView
+      android:id="@+id/img_red_packet"
+      android:layout_width="152.0dip"
+      android:layout_height="38.0dip"
+      android:layout_marginTop="2.0dip"
+      android:contentDescription="@string/app_name"
+      android:scaleType="fitXY"
+      android:src="@drawable/room_redpacket"
+      />
+</LinearLayout>

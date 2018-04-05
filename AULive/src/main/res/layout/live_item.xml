@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="55dp"
+      android:layout_alignBottom="@+id/framelayout"
+      >
+
+    <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+        xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_btn_user_face"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/default_head"
+        android:scaleType="centerInside"
+        imagecontrol:border_inside_color="@color/global_main_bg"
+        imagecontrol:border_thickness="1.0dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_live_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/image_btn_user_face"
+        android:text="昵称"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <ImageButton
+        android:id="@+id/image_btn_viewer_logo"
+        android:layout_width="12dp"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@id/text_view_live_nickname"
+        android:layout_below="@id/text_view_live_nickname"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/room_pop_up_location"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:id="@+id/text_view_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_live_nickname"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/image_btn_viewer_logo"
+        android:gravity="center"
+        android:text="城市"
+        android:textColor="@color/graylight2"
+        android:textSize="13dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_live_viewcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/text_view_live_viewer"
+        android:text="1234"
+        android:textColor="@color/global_main_bg"
+        android:textSize="19sp"
+        />
+
+
+    <TextView
+        android:id="@+id/text_view_live_viewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_view_live_viewcount"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="观看"
+        android:textColor="@color/graylight2"
+        android:textSize="15sp"
+        />
+
+
+  </RelativeLayout>
+
+  <FrameLayout
+      android:id="@+id/framelayout"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      >
+    <ImageView
+        android:id="@+id/image_view_live_cover_image"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        android:tileMode="repeat"
+        />
+    <ImageView
+        android:id="@+id/iv_payliving"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        />
+    <Button
+        android:id="@+id/Share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ff4acc59"
+        android:padding="5dp"
+        android:text="分享"
+        android:visibility="gone"
+        />
+  </FrameLayout>
+
+  <TextView
+      android:id="@+id/tv_topics"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_toRightOf="@id/image_btn_user_face"
+      android:text="直播标题"
+      android:textColor="@color/graylight2"
+      android:textSize="18sp"
+
+      />
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="5dp"
+      android:background="@color/item_bg"
+      ></View>
+
+</LinearLayout>

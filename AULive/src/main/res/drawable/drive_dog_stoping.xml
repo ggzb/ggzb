@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dog_stoping_anim"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/drive_dog_rub00"
+        android:duration="170"/>
+
+    <item
+        android:drawable="@drawable/drive_dog_rub01"
+        android:duration="170"/>
+    <item
+        android:drawable="@drawable/drive_dog_rub02"
+        android:duration="170"/>
+</animation-list>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onetoone_call_bg"
+    android:oneshot="false">
+
+  <item
+      android:drawable="@drawable/onetoone_call_bg_1"
+      android:duration="150"/>
+
+  <item
+      android:drawable="@drawable/onetoone_call_bg_2"
+      android:duration="150"/>
+
+  <item
+      android:drawable="@drawable/onetoone_call_bg_3"
+      android:duration="150"/>
+
+  <item
+      android:drawable="@drawable/onetoone_call_bg_4"
+      android:duration="150"/>
+
+  <item
+      android:drawable="@drawable/onetoone_call_bg_5"
+      android:duration="150"/>
+
+  <item
+      android:drawable="@drawable/onetoone_call_bg_6"
+      android:duration="150"/>
+  <item
+      android:drawable="@drawable/onetoone_call_bg_7"
+      android:duration="150"/>
+  <item
+      android:drawable="@drawable/onetoone_call_bg_8"
+      android:duration="150"/>
+  <item
+      android:drawable="@drawable/onetoone_call_bg_9"
+      android:duration="150"/>
+  <item
+      android:drawable="@drawable/onetoone_call_bg_10"
+      android:duration="150"/>
+  <item
+      android:drawable="@drawable/onetoone_call_bg_11"
+      android:duration="150"/>
+</animation-list>

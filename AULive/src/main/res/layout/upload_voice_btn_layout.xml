@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="说说项目相关的内容"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="200.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/voice_rcd_hint_bg" >
+
+            <TextView
+                android:id="@+id/ondate_AudioTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/chat_audio_point"
+                android:drawablePadding="5.0dip"
+                android:textColor="@color/white"
+                android:textSize="16.0sp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/ondate_voice_size_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/btn_layout"
+                android:layout_below="@id/ondate_AudioTimeTv"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ondate_record_image_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/chat_audio_full" />
+
+                <ImageView
+                    android:id="@+id/ondate_record_image_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ondate_record_image_full"
+                    android:layout_centerInParent="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/chat_audio_empty" />
+
+                <ImageView
+                    android:id="@+id/ondate_voice_play_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/voice_play_state"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ondate_voice_playing_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/voice_play_state"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6.0dip"
+                android:layout_marginTop="6.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ondate_voice_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_bar_send_voice_bg"
+                    android:gravity="center"
+                    android:longClickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/chat_bar_send_voice_icon"
+                        android:drawablePadding="5.0dip"
+                        android:gravity="center"
+                        android:text="@string/chat_press_voice"
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ondate_state_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/ondate_again_voice_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chat_bar_send_voice_bg_cancel"
+                        android:gravity="center"
+                        android:text="重录"
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+
+                    <Button
+                        android:id="@+id/ondate_send_voice_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chat_bar_send_voice_bg"
+                        android:gravity="center"
+                        android:text="发送"
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

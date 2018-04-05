@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drive_light_anim"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/drive_effect00"
+        android:duration="125"/>
+
+    <item
+        android:drawable="@drawable/drive_effect02"
+        android:duration="125"/>
+
+    <item
+        android:drawable="@drawable/drive_effect03"
+        android:duration="125"/>
+
+    <item
+        android:drawable="@drawable/drive_effect04"
+        android:duration="125"/>
+
+    <item
+        android:drawable="@drawable/drive_effect05"
+        android:duration="125"/>
+
+    <item
+        android:drawable="@drawable/drive_effect06"
+        android:duration="125"/>
+
+    <item
+        android:drawable="@drawable/drive_effect07"
+        android:duration="125"/>
+
+    <item
+        android:drawable="@drawable/drive_effect08"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect09"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect10"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect11"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect12"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect13"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect14"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect15"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect16"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect17"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect18"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect19"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect20"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect21"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect22"
+        android:duration="125"/>
+    <item
+        android:drawable="@drawable/drive_effect23"
+        android:duration="125"/>
+
+</animation-list>

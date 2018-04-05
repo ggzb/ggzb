@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="5dp">
+
+
+    <TextView
+        android:id="@+id/chat_more_check"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        style="@style/more_textstyle"
+        android:background="@drawable/more_first_selector"
+        android:text="查看资料" />
+
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/chat_more_check"
+        android:layout_centerHorizontal="true"
+        android:background="@color/global_main_bg" />
+
+
+    <TextView
+        android:layout_alignLeft="@+id/chat_more_check"
+        android:layout_alignRight="@+id/chat_more_check"
+        android:id="@+id/chat_more_clear"
+        style="@style/more_textstyle"
+        android:layout_below="@id/chat_more_check"
+        android:background="@drawable/more_middle_selector"
+        android:text="清空" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/chat_more_clear"
+        android:layout_centerHorizontal="true"
+        android:background="@color/global_main_bg" />
+
+    <TextView
+        android:layout_alignLeft="@+id/chat_more_check"
+        android:layout_alignRight="@+id/chat_more_check"
+        android:id="@+id/chat_more_lahei"
+        style="@style/more_textstyle"
+        android:layout_below="@id/chat_more_clear"
+        android:background="@drawable/more_middle_selector"
+        android:text="拉黑" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/chat_more_lahei"
+        android:layout_centerHorizontal="true"
+        android:background="@color/global_main_bg" />
+
+    <TextView
+        android:layout_alignLeft="@+id/chat_more_check"
+        android:layout_alignRight="@+id/chat_more_check"
+        android:id="@+id/chat_more_cancel"
+        style="@style/more_textstyle"
+        android:layout_below="@id/chat_more_lahei"
+        android:background="@drawable/more_last_selector"
+        android:text="取消" />
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/jiesihuo_title" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="525dp"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:id="@+id/rl_cond_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="102dp"
+                    android:layout_alignLeft="@+id/iv_cond_panda"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/iv_cond_panda"
+                    android:layout_centerHorizontal="true">
+
+
+                    <ImageView
+                        android:id="@+id/iv_cond_tag1"
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="50dp"
+                        android:src="@drawable/cond_add_cloud1" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="center"
+                        android:text="明明最美"
+                        android:textColor="@color/global_main_bg" />
+
+                    <ImageView
+                        android:id="@+id/iv_cond_tag2"
+                        android:layout_width="99dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="140dp"
+                        android:src="@drawable/cond_add_cloud2" />
+
+                    <TextView
+                        android:layout_width="99dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="140dp"
+                        android:gravity="center"
+                        android:text="求守护"
+                        android:textColor="@color/global_main_bg" />
+
+                    <ImageView
+                        android:id="@+id/iv_cond_tag3"
+                        android:layout_width="90dp"
+                        android:layout_height="51dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginRight="55dp"
+                        android:src="@drawable/cond_add_cloud3" />
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="51dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginRight="55dp"
+                        android:gravity="center"
+                        android:text="么么女神"
+                        android:textColor="@color/global_main_bg" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_cond_panda"
+                    android:layout_width="340dp"
+                    android:layout_height="425dp"
+                    android:layout_centerHorizontal="true"
+                     />
+
+
+                <LinearLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_cond_content"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:lines="3" />
+
+                    <TextView
+                        android:id="@+id/tv_cond_suggest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_cond_content"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/global_main_bg" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_panda_belly"
+                        android:layout_width="260dp"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:id="@+id/iv_panda_belly"
+                            android:layout_width="240dp"
+                            android:layout_height="180dp"
+                            android:layout_centerInParent="true"
+                             />
+
+                        <LinearLayout
+                            android:id="@+id/ll_cond_setprice"
+                            android:layout_width="110dp"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="40dp"
+                            android:background="@drawable/cond_box"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <EditText
+                                android:id="@+id/ed_cond_setprice"
+                                style="?android:attr/textViewStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:hint="20"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="钻/分钟"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/bt_cond_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_cond_setprice"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@null"
+                            android:text="确认"
+                            android:textColor="@drawable/text_solo_selector"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/qav_chat_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+                    <CheckBox
+                        android:id="@+id/danmu_checkbox"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/danmu_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        />
+                    <EditText
+                        android:id="@+id/qav_bottombar_msg_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_editttext_room_chat"
+                        android:contentDescription="文本框  连按两次来编辑"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="说点什么吧"
+                        android:inputType="text"
+                        android:maxLines="5"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        />
+
+                    <Button
+                        android:id="@+id/qav_bottombar_send_msg"
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/bg_btn_room_send"
+                        android:text="发送"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:id="@+id/ll_cond_addtag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_add_tag"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:padding="5dp"
+                        android:src="@drawable/cond_add_tag" />
+
+                    <TextView
+                        android:id="@+id/tv_cond_addtag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="添加个性标签，提高您的点击率"
+                        android:textColor="@color/global_main_bg" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

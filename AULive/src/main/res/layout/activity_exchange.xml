@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graylight"
+    >
+
+    <include layout="@layout/jiesihuo_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_diamond"
+                android:background="@drawable/my_diamond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_toRightOf="@+id/image_diamond"
+                android:id="@+id/my_diamond"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="我的钻石:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/text_exchange_diamond"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/my_diamond"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff0000"
+                android:textSize="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_flower"
+                android:background="@drawable/my_flower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/image_flower"
+            android:id="@+id/my_flower"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="我的货币:"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_toRightOf="@+id/my_flower"
+            android:id="@+id/text_exchange"
+            android:textColor="#ff0000"
+            android:textSize="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+       <!--<RelativeLayout-->
+           <!--android:padding="8dp"-->
+           <!--android:layout_margin="10dp"-->
+           <!--android:background="@drawable/btn_exchange"-->
+           <!--android:id="@+id/exchange_wx"-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="60dp"-->
+           <!--&gt;-->
+           <!--<TextView-->
+               <!--android:id="@+id/location1"-->
+               <!--android:layout_centerInParent="true"-->
+               <!--android:layout_width="wrap_content"-->
+               <!--android:layout_height="wrap_content"/>-->
+           <!--<ImageView-->
+               <!--android:layout_toLeftOf="@+id/location1"-->
+               <!--android:layout_marginRight="20dp"-->
+               <!--android:id="@+id/weixin"-->
+               <!--android:background="@drawable/userinfo_weixin"-->
+               <!--android:layout_width="60dp"-->
+               <!--android:layout_height="60dp"/>-->
+           <!--<TextView-->
+               <!--android:layout_toRightOf="@+id/weixin"-->
+               <!--android:text="微信"-->
+               <!--android:textSize="30sp"-->
+               <!--android:textColor="#000000"-->
+               <!--android:layout_centerVertical="true"-->
+               <!--android:layout_width="wrap_content"-->
+               <!--android:layout_height="wrap_content"/>-->
+       <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:padding="8dp"
+               android:layout_below="@+id/exchange_wx"
+               android:background="@drawable/btn_exchange"
+               android:id="@+id/exchange_zfb"
+               android:layout_margin="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/location2"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+           <ImageView
+               android:layout_marginRight="20dp"
+               android:id="@+id/zhifubao"
+               android:background="@drawable/userinfo_aliay"
+               android:layout_toLeftOf="@+id/location2"
+               android:layout_width="60dp"
+               android:layout_height="60dp"/>
+           <TextView
+               android:layout_toRightOf="@id/zhifubao"
+               android:layout_centerVertical="true"
+               android:text="支付宝"
+               android:textSize="30sp"
+               android:textColor="#000000"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </RelativeLayout>
+
+            <RelativeLayout
+                    android:padding="15dp"
+                   android:layout_below="@+id/exchange_zfb"
+                   android:background="@drawable/btn_exchange"
+                   android:id="@+id/exchange_lianlian"
+                   android:layout_margin="15dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                    android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/location5"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+           <ImageView
+               android:layout_marginRight="40dp"
+               android:id="@+id/lianlian"
+               android:background="@drawable/bank_card"
+               android:layout_toLeftOf="@+id/location5"
+               android:layout_width="60dp"
+               android:layout_height="60dp"/>
+           <TextView
+               android:layout_toRightOf="@id/lianlian"
+               android:layout_centerVertical="true"
+               android:text="银行卡提现"
+               android:textSize="20sp"
+               android:textColor="#000000"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </RelativeLayout>
+
+
+       <RelativeLayout
+           android:padding="8dp"
+           android:layout_below="@+id/exchange_zfb"
+           android:background="@drawable/btn_exchange"
+           android:id="@+id/exchange_diamond"
+           android:layout_margin="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:visibility="gone"
+           >
+           <TextView
+               android:id="@+id/location3"
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <ImageView
+               android:layout_marginRight="20dp"
+               android:id="@+id/diamond"
+               android:layout_toLeftOf="@+id/location3"
+               android:background="@drawable/exchange_diamond"
+               android:layout_width="60dp"
+               android:layout_height="60dp" />
+           <TextView
+               android:text="兑换钻石"
+               android:textSize="30sp"
+               android:textColor="#000000"
+               android:layout_toRightOf="@+id/diamond"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_below="@+id/exchange_diamond"
+           android:background="@drawable/btn_exchange"
+           android:id="@+id/family"
+           android:layout_margin="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:visibility="gone"
+           >
+           <TextView
+               android:id="@+id/location4"
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <ImageView
+               android:layout_marginRight="20dp"
+               android:layout_centerVertical="true"
+               android:id="@+id/fam"
+               android:background="@drawable/family"
+               android:layout_toLeftOf="@+id/location4"
+               android:layout_width="50dp"
+               android:layout_height="50dp"/>
+           <TextView
+               android:layout_toRightOf="@+id/fam"
+               android:text="家族管理"
+               android:textSize="30sp"
+               android:textColor="#000000"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </RelativeLayout>
+
+            <TextView
+                android:id="@+id/common_problem"
+                android:text="常见问题?"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"/>
+
+
+
+    <!--<TextView-->
+       <!--android:layout_margin="10dp"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="推荐微信提现方式:每次200,不限次,不限额!"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <!--<TextView-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="如有提现过程中遇到问题,请联系官方客服(QQ:2446397883)"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

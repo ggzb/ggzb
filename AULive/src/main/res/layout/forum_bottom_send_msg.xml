@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:minHeight="42.0dip" >
+
+    
+        
+     <ImageView
+         android:id="@+id/bottomLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_solid" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomLine"
+        android:background="@color/main_bg"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:minHeight="42.0dip"
+        android:orientation="horizontal"
+        android:paddingBottom="6.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="6.0dip" >
+
+        <EditText
+            android:id="@+id/etSendMsg"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="说点啥..."
+            android:padding="6.0dip"
+            android:textColor="#ff595857"
+            android:textColorHint="#ffa3a3a2"
+            android:textSize="14.0sp" />
+
+        <Button
+            android:id="@+id/btnSendMsg"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8.0dip"
+            android:text="发送"
+            android:background="@null"
+            android:gravity="center"
+            android:onClick="sendMsgClick"
+            android:textColor="@color/btn_bottom_send_msg_n"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

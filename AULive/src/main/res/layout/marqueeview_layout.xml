@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/marqueeView_contain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="-5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/rec_background"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:visibility="gone"
+    android:gravity="center_vertical">
+
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:src="@drawable/laba_1"
+      />
+
+  <LinearLayout
+      android:id="@+id/ll_marquee"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <com.ilikezhibo.ggzb.avsdk.activity.xiaolaba.CustomTextView
+        android:id="@+id/tv_marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+</LinearLayout>
+
+</LinearLayout>

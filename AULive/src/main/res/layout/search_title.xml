@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/global_main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+         android:id="@+id/title_blank"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+         android:orientation="vertical"
+         android:visibility="gone">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/global_main_bg" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/back_selector"
+            android:textColor="@color/white"  />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#ffffffff"
+            android:textScaleX="0.96"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+
+      <LinearLayout
+          android:id="@+id/ll_change"
+          android:layout_width="205dp"
+          android:layout_toRightOf="@+id/back"
+          android:layout_toLeftOf="@+id/topRightBtn"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="3dp"
+          android:background="@drawable/bg_editttext_room_chat"
+          android:gravity="center_vertical"
+          android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tv_change_boy"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_prd"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/tv_serach"
+            android:layout_width="140dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left"
+            android:hint="请输入用户名"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="2.0dip"
+            android:textColor="#000000"
+            android:textColorHint="@color/white"
+            android:textSize="14.0sp"
+            android:visibility="visible" >
+        </EditText>
+        <ImageView
+            android:id="@+id/city_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/citiesclosed"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"/>
+      </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/topRightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dp"
+            android:text="搜索"
+            android:textColor="@drawable/dialog_item_selector"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

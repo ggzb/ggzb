@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AULive/AULive.iml" filepath="$PROJECT_DIR$/AULive/AULive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Keguan-Live.iml" filepath="$PROJECT_DIR$/Android-Keguan-Live.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMKit/IMKit.iml" filepath="$PROJECT_DIR$/IMKit/IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weiboSDK/weiboSDK.iml" filepath="$PROJECT_DIR$/weiboSDK/weiboSDK.iml" />
+    </modules>
+  </component>
+</project>

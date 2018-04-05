@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/room_full_screen_gift_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <RelativeLayout
+      android:id="@+id/ship_ly"
+      android:layout_width="fill_parent"
+      android:layout_height="432.0dip"
+      android:layout_alignParentBottom="true"
+      android:visibility="gone"
+      >
+
+    <ImageView
+        android:id="@+id/ship_water1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+
+        android:layout_marginLeft="-150dp"
+        android:layout_marginRight="-150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/yacht_water_one"
+        />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/plane_shadow"-->
+    <!--android:layout_width="252.0dip"-->
+    <!--android:layout_height="220.0dip"-->
+    <!--android:layout_alignLeft="@+id/ship_body_layout"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignStart="@+id/ship_body_layout"-->
+    <!--android:layout_marginBottom="80dp"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:src="@drawable/yacht_shadow"-->
+    <!--/>-->
+    <RelativeLayout
+        android:id="@+id/ship_body_layout"
+        android:layout_width="252.0dip"
+        android:layout_height="220.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135.0dip"
+        >
+
+
+      <ImageView
+          android:id="@+id/plane_shadow"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="140dp"
+          android:scaleType="fitCenter"
+          android:src="@drawable/yacht_shadow"
+          />
+      <ImageView
+          android:id="@+id/ship_body"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_marginBottom="20dp"
+          android:scaleType="fitCenter"
+          android:src="@drawable/yacht_hull"
+          />
+
+
+      <RelativeLayout
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginRight="30dp"
+          >
+
+        <ImageView
+            android:id="@+id/car_one_redpoint"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gift_common_redpoint"
+            />
+
+        <TextView
+            android:id="@+id/room_gift_car_one_send_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/car_one_redpoint"
+            android:ellipsize="middle"
+            android:gravity="center_vertical"
+            android:shadowColor="@color/room_gift_text_shadow"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:text="big赠"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp"
+            />
+
+        <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+            xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/yacht_user_portrait"
+            android:layout_width="59.0dip"
+            android:layout_height="59.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/room_gift_car_one_send_person"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/yacht_sender_bg"
+            android:padding="3.5dip"
+            imagecontrol:border_inside_color="@color/global_main_bg"
+            imagecontrol:border_thickness="0.5dp"
+            />
+      </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ship_water2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginRight="-100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/yacht_water_one"
+        />
+
+  </RelativeLayout>
+</RelativeLayout>

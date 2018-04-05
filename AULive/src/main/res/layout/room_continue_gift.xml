@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gift_container"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    >
+
+  <View
+      android:id="@+id/place_holder"
+      android:layout_width="20.0dip"
+      android:layout_height="40dp"
+      android:layout_marginLeft="20.0dip"
+      android:layout_marginTop="20dp"
+      android:background="@color/continue_gift_bg"
+      />
+
+
+  <LinearLayout
+      android:id="@+id/gift_info_container"
+      android:layout_width="110.0dip"
+      android:layout_height="40dp"
+      android:layout_marginTop="20dp"
+      android:layout_toRightOf="@+id/place_holder"
+      android:background="@color/continue_gift_bg"
+      android:gravity="center_vertical"
+      android:orientation="vertical"
+      android:paddingLeft="5.0dip"
+      >
+
+    <TextView
+        android:id="@+id/txt_gift_info"
+        android:text="平淡的"
+        style="@style/continue_gift_info_txt"
+        />
+
+    <TextView
+        android:id="@+id/txt_gift_desc"
+        android:text="送一个小黄瓜"
+        android:textColor="@color/continue_gift_desc"
+        style="@style/continue_gift_info_txt"
+        />
+  </LinearLayout>
+
+  <com.ilikezhibo.ggzb.xiangmu.RoundImageView
+      xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/img_creator_icon"
+      android:layout_width="40.0dip"
+      android:layout_height="40.0dip"
+      android:layout_marginTop="20dp"
+      android:gravity="center_vertical"
+      android:src="@drawable/default_head"
+      imagecontrol:border_inside_color="@color/whitesmoke"
+      imagecontrol:border_thickness="0.5dp"
+      />
+  <View
+      android:id="@+id/gift_icon_bg"
+      android:layout_width="80.0dip"
+      android:layout_height="40.0dip"
+      android:layout_marginTop="20dp"
+      android:layout_toRightOf="@id/gift_info_container"
+      android:background="@drawable/shape_continue_gift_bg"
+      />
+
+  <ImageView
+      android:id="@+id/img_gift_icon"
+      android:layout_width="80.0dip"
+      android:layout_height="50.0dip"
+      android:layout_marginRight="10.0dip"
+      android:layout_marginTop="10.0dip"
+      android:layout_toRightOf="@id/gift_info_container"
+      android:contentDescription="@string/app_name"
+      android:src="@drawable/ic_launcher"
+      android:visibility="invisible"
+      />
+
+  <com.ilikezhibo.ggzb.avsdk.gift.StrokeTextView
+      android:id="@+id/txt_times"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="-35.0dip"
+      android:layout_toRightOf="@id/img_gift_icon"
+      android:gravity="center_horizontal"
+      android:padding="10.0dip"
+      android:text="X1"
+      android:textColor="@color/global_main_bg"
+      android:textSize="23.0sp"
+      android:textStyle="bold"
+      android:visibility="invisible"
+      />
+</RelativeLayout>

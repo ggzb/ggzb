@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  <RelativeLayout
+
+      android:id="@+id/root_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#66000000"
+      >
+    <FrameLayout
+        android:id="@+id/viewpager_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <com.ilikezhibo.ggzb.avsdk.gift.LoopViewPager
+          android:id="@+id/pager"
+          style="@style/room_gift_pager"
+          />
+
+      <LinearLayout
+          android:id="@+id/layout_dotView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:orientation="horizontal"
+          >
+      </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line_grey"
+        android:layout_below="@id/viewpager_frameLayout"
+        style="@style/line_room_gift_popup"
+        />
+    <LinearLayout
+        android:id="@+id/oper_container"
+        android:layout_below="@id/line_grey"
+        style="@style/room_gift_oper_container"
+        >
+      <LinearLayout
+          android:id="@+id/btn_charge"
+          style="@style/room_gift_btn_charge"
+          >
+        <TextView style="@style/room_gift_chargeinfor_balance"/>
+        <TextView
+            android:id="@+id/txt_account_balance"
+            style="@style/room_gift_account_balance_text"
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:contentDescription="@string/app_name"
+            style="@style/room_gift_account_balance_img"
+            />
+        <ImageView
+            android:contentDescription="@string/app_name"
+            style="@style/room_gift_account_balance_right_img"
+            />
+      </LinearLayout>
+      <View
+          android:layout_height="1.0dip"
+          style="@style/weight_length_horizontal"
+          />
+      <Button
+          android:id="@+id/btn_send"
+          style="@style/room_gift_btn_send"
+          />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_continue_send"
+        android:layout_alignBottom="@id/oper_container"
+        style="@style/room_gift_btn_continuesend"
+        />
+  </RelativeLayout>
+</LinearLayout>
